@@ -6,6 +6,15 @@ public class PlayerMovement : MonoBehaviour
     public int facingDirection = 1;
     public Rigidbody2D rb;
     public Animator anim;
+    public PlayerCombat playerCombat;
+
+    private void Update()
+    {
+        if(Input.GetButtonDown("Slash"))
+        {
+            playerCombat.Attack();
+        }
+    }
 
 
     // Update is called 50x per frame

@@ -2785,6 +2785,7 @@ GameObject:
   - component: {fileID: 1188929184}
   - component: {fileID: 1188929185}
   - component: {fileID: 1188929186}
+  - component: {fileID: 1188929187}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2946,6 +2947,7 @@ MonoBehaviour:
   facingDirection: 1
   rb: {fileID: 1188929183}
   anim: {fileID: 1188929185}
+  playerCombat: {fileID: 1188929187}
 --- !u!95 &1188929185
 Animator:
   serializedVersion: 7
@@ -2983,6 +2985,19 @@ MonoBehaviour:
   currentHealth: 3
   maxHealth: 3
   slider: {fileID: 508691010}
+--- !u!114 &1188929187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188929179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff00182f4a184f48885a95b78eff483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+  anim: {fileID: 1188929185}
 --- !u!1 &1310289650
 GameObject:
   m_ObjectHideFlags: 0
