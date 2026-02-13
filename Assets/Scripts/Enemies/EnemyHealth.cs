@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class EnemyHealth : MonoBehaviour
+{
+    public int currentHealth = 4;
+    public int maxHealth = 4;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void ChangeHealth(int amount)
+    {
+        currentHealth += amount;
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+}
