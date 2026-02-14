@@ -4,10 +4,7 @@ public class PlayerCombat : MonoBehaviour
 {
     public Animator anim;
     public Transform attackPoint;
-    public float cooldown = 1f;
-    public float weaponRange = 1f;
     public LayerMask enemyLayer;
-    public int damage = 1;
     
     private float timer;
 
@@ -26,19 +23,18 @@ public class PlayerCombat : MonoBehaviour
         {
             anim.SetBool("isAttacking", true);
 
-            timer = cooldown;
+            timer = StatsManager.Instance.attackCooldown;
         }
     }
 
 
     public void DealDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, StatsManager.Instance.weaponRange, enemyLayer);
 
-        foreach (Collider2D enemy in enemies)
+        if (enemies.Length > 0)
         {
-            if(enemy.isTrigger)
-            {continue;}
+            enemies[0].GetComponent<EnemyHealth>().ChangeHealth(-(StatsManager.Instance.damage));
         }
     }
 
@@ -46,12 +42,5 @@ public class PlayerCombat : MonoBehaviour
     public void FinishAttack()
     {
         anim.SetBool("isAttacking", false);
-    }
-
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
     }
 }
