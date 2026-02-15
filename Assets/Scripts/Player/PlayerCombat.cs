@@ -5,6 +5,7 @@ public class PlayerCombat : MonoBehaviour
     public Animator anim;
     public Transform attackPoint;
     public LayerMask enemyLayer;
+    public StatsUI statsUI;
     
     private float timer;
 
