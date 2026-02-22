@@ -9,11 +9,15 @@ public class fireball: MonoBehaviour
     public int damage;
 
     public LayerMask enemyLayer;
+    public LayerMask obstacleLayer;
+
+    public SpriteRenderer sr;
+    public Sprite buriedSprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb.linearVelocity = direction.normalized * speed;
+        rb.linearVelocity = direction * speed;
         RotateFireball();
         Destroy(gameObject, lifeSpan);
     }
@@ -30,6 +34,16 @@ public class fireball: MonoBehaviour
         {
             collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-damage);
         }
-        Destroy(gameObject);
+        else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
+        {
+            AttachToTarget(collision.gameObject.transform);
+        }
+    }
+
+    private void AttachToTarget(Transform target)
+    {
+        sr.sprite = buriedSprite;
+        rb.linearVelocity = Vector2.zero;
+        transform.SetParent(target);
     }
 }
