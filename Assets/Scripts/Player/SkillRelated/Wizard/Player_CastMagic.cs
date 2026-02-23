@@ -55,7 +55,7 @@ public class Player_CastMagic : MonoBehaviour
 
     public void Shoot()
     {
-        if(castTimer > 0)
+        if(castTimer <= 0)
         {
             fireball fireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity).GetComponent<fireball>();
             fireball.direction = aimDirection;
