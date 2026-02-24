@@ -6810,7 +6810,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -5453514370919266343, guid: 331c11c22a92fc048a39c61c8d07efc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6977,7 +6977,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1448252480329919801, guid: 80ae33848c9190946bc30403947a9d6e, type: 3}
+  m_Sprite: {fileID: 888776203088456283, guid: 1aed0eef5f007564ba405b6307634dbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9338,7 +9338,7 @@ GameObject:
   - component: {fileID: 1439077315}
   - component: {fileID: 1439077314}
   m_Layer: 0
-  m_Name: RelicPrefab
+  m_Name: CrystallineHeart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9356,6 +9356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d31576dfc63064cae9d78b119f975f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Loot
+  relicData: {fileID: 11400000, guid: 6dacfc38a4f459f49b4c24b164853907, type: 2}
+  sr: {fileID: 1118291167}
+  anim: {fileID: 1439077315}
 --- !u!95 &1439077315
 Animator:
   serializedVersion: 7
@@ -9366,7 +9369,7 @@ Animator:
   m_GameObject: {fileID: 1439077313}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 077c1ebbf3f8d914cb7274d19f21b871, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
