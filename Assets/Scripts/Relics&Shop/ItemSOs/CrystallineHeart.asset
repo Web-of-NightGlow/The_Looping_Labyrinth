@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8b194594c9bd64283e9f999431128e, type: 3}
   m_Name: CrystallineHeart
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemName: CrystallineHeart
+  itemName: Crystalline Heart
   itemDescription: A heart shaped crystal from a terrain based world.
   itemIcon: {fileID: -5453514370919266343, guid: 331c11c22a92fc048a39c61c8d07efc0, type: 3}
   isGold: 0
