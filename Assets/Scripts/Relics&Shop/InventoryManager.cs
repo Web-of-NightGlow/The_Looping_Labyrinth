@@ -3,6 +3,7 @@ using TMPro;
 
 public class InventoryManager : MonoBehaviour
 {
+    public InventorySlot[] relicSlots;
     public int gold;
     public TMP_Text goldText;
 
@@ -20,13 +21,22 @@ public class InventoryManager : MonoBehaviour
     {
         if(item.isGold)
         {
-            gold += 1;
+            gold += quantity;
             goldText.text = gold.ToString();
             return;
         }
         else
         {
-            UpdateUI();
+            foreach (var slot in relicSlots)
+            {
+                if (slot.itemData == null)
+                {
+                    slot.itemData = item;
+                    slot.quantity = quantity;
+                    slot.UpdateUI();
+                    return;
+                }
+            }
         }
     }
 }

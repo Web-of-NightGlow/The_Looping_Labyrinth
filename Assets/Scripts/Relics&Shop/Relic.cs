@@ -6,6 +6,8 @@ public class Relic : MonoBehaviour
     public ItemSO relicData;
     public SpriteRenderer sr;
     public Animator anim;
+    
+    public int quantity;
 
     public static event Action<ItemSO, int> OnRelicLooted;
 
@@ -13,7 +15,6 @@ public class Relic : MonoBehaviour
     {
         if (relicData == null)
             return;
-
         sr.sprite = relicData.itemIcon;
         this.name = relicData.itemName;
     }

@@ -199,3 +199,4 @@ MonoBehaviour:
   relicData: {fileID: 0}
   sr: {fileID: 5020081993672405042}
   anim: {fileID: 7569804432415737335}
+  quantity: 1
