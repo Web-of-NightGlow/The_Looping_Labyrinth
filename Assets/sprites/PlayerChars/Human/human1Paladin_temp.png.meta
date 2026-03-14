@@ -5,6 +5,36 @@ TextureImporter:
   - first:
       213: 2502716560772617674
     second: human1Paladin_temp_0
+  - first:
+      213: 9147025929846507936
+    second: human1Paladin_temp_1
+  - first:
+      213: -1332799163422853256
+    second: human1Paladin_temp_2
+  - first:
+      213: -1633625734149696930
+    second: human1Paladin_temp_3
+  - first:
+      213: 1453647511084922339
+    second: human1Paladin_temp_4
+  - first:
+      213: -9170374882397982599
+    second: human1Paladin_temp_5
+  - first:
+      213: -4273774389111239585
+    second: human1Paladin_temp_6
+  - first:
+      213: -3329862829145495063
+    second: human1Paladin_temp_7
+  - first:
+      213: 4424727469252156245
+    second: human1Paladin_temp_8
+  - first:
+      213: -6230737088710630586
+    second: human1Paladin_temp_9
+  - first:
+      213: 3251364375324747525
+    second: human1Paladin_temp_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,12 +146,12 @@ TextureImporter:
       name: human1Paladin_temp_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 24
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +164,231 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9c9c3ce93c0fe70800000000000000
+      internalID: 9147025929846507936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8773e3be832f08de0800000000000000
+      internalID: -1332799163422853256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e521214dc023459e0800000000000000
+      internalID: -1633625734149696930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5f8d6a5b46c2410800000000000000
+      internalID: 1453647511084922339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970f08591a84cb080800000000000000
+      internalID: -9170374882397982599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cccd626d080b4c0800000000000000
+      internalID: -4273774389111239585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e961063663f9c1d0800000000000000
+      internalID: -3329862829145495063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b10b8a03ac76d30800000000000000
+      internalID: 4424727469252156245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6432d8231a9f789a0800000000000000
+      internalID: -6230737088710630586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Paladin_temp_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50767924caa2f1d20800000000000000
+      internalID: 3251364375324747525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e829e93da0fa32a428492f641899b157
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +396,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       human1Paladin_temp_0: 2502716560772617674
+      human1Paladin_temp_1: 9147025929846507936
+      human1Paladin_temp_10: 3251364375324747525
+      human1Paladin_temp_2: -1332799163422853256
+      human1Paladin_temp_3: -1633625734149696930
+      human1Paladin_temp_4: 1453647511084922339
+      human1Paladin_temp_5: -9170374882397982599
+      human1Paladin_temp_6: -4273774389111239585
+      human1Paladin_temp_7: -3329862829145495063
+      human1Paladin_temp_8: 4424727469252156245
+      human1Paladin_temp_9: -6230737088710630586
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
