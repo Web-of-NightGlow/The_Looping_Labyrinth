@@ -944,6 +944,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5020081993672405042, guid: 0aa63310bd0591f4a86d1fcd8f0361bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4113007716044355945, guid: 294913dd5890ac8428e61f353b1ed87d, type: 3}
     - target: {fileID: 5763261394283971092, guid: 0aa63310bd0591f4a86d1fcd8f0361bc, type: 3}
       propertyPath: m_Name
       value: Boots Of Swiftness
@@ -1022,6 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc03cdc6edae98340928609a83407646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatsManager
+  statsUI: {fileID: 0}
   damage: 1
   weaponRange: 1
   attackCooldown: 1
@@ -7124,7 +7129,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1044228038
 RectTransform:
@@ -18462,6 +18467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5020081993672405042, guid: 0aa63310bd0591f4a86d1fcd8f0361bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6514233343105728316, guid: 117896a204d947d44afc6d277967fd02, type: 3}
     - target: {fileID: 5763261394283971092, guid: 0aa63310bd0591f4a86d1fcd8f0361bc, type: 3}
       propertyPath: m_Name
       value: Strong Boy Milk

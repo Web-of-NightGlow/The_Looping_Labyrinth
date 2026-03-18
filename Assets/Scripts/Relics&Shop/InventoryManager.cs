@@ -43,18 +43,23 @@ public class InventoryManager : MonoBehaviour
                     slot.itemData = itemSO;
                     slot.quantity = quantity;
                     slot.UpdateUI();
-                    UseRelic(slot);
+                    UseRelicFromSlot(slot);
                     return;
                 }
             }
         }
     }
 
-    public void UseRelic(InventorySlot slot)
+    public void UseRelicFromSlot(InventorySlot slot)
+{
+    if (slot.itemData != null && slot.quantity > 0)
     {
-        if (slot.itemData != null && slot.quantity > 0)
+        UseRelic.ApplyRelicEffect(slot.itemData);
+        if (slot.quantity <= 0)
         {
-            Debug.Log($"Used {slot.itemData.itemName}");
+            slot.itemData = null;
         }
+        slot.UpdateUI();
     }
+}
 }
