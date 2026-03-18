@@ -24,7 +24,7 @@ public class Relic : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             anim.Play("relicPickUp");
-            OnRelicLooted?.Invoke(relicData, 1);
+            OnRelicLooted?.Invoke(relicData, quantity);
             Destroy(gameObject, 0.5f);
         }
     }

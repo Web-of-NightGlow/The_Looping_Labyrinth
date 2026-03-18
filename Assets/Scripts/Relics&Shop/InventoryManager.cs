@@ -7,6 +7,15 @@ public class InventoryManager : MonoBehaviour
     public int gold;
     public TMP_Text goldText;
 
+
+    private void Start()
+    {
+        foreach (var slot in relicSlots)
+        {
+            slot.UpdateUI();
+        }
+    }
+
     private void OnEnable()
     {
         Relic.OnRelicLooted += AddToInventory;
@@ -17,9 +26,9 @@ public class InventoryManager : MonoBehaviour
         Relic.OnRelicLooted -= AddToInventory;
     }
 
-    public void AddToInventory(ItemSO item, int quantity)
+    public void AddToInventory(ItemSO itemSO, int quantity)
     {
-        if(item.isGold)
+        if(itemSO.isGold)
         {
             gold += quantity;
             goldText.text = gold.ToString();
@@ -31,12 +40,21 @@ public class InventoryManager : MonoBehaviour
             {
                 if (slot.itemData == null)
                 {
-                    slot.itemData = item;
+                    slot.itemData = itemSO;
                     slot.quantity = quantity;
                     slot.UpdateUI();
+                    UseRelic(slot);
                     return;
                 }
             }
+        }
+    }
+
+    public void UseRelic(InventorySlot slot)
+    {
+        if (slot.itemData != null && slot.quantity > 0)
+        {
+            Debug.Log($"Used {slot.itemData.itemName}");
         }
     }
 }
