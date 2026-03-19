@@ -34,12 +34,30 @@ public class InventoryManager : MonoBehaviour
             goldText.text = gold.ToString();
             return;
         }
-        else
+
+        foreach(var slot in relicSlots)
         {
+            if(slot.itemData == itemSO && slot.quantity < itemSO.stackSize)
+            {
+                int availableSpace = itemSO.stackSize - slot.quantity;
+                int ammountToAdd = Mathf.Min(availableSpace, quantity);
+
+                slot.quantity += ammountToAdd;
+                quantity -= ammountToAdd;
+
+                slot.UpdateUI();
+
+                if(quantity <= 0)
+                {
+                    return;
+                }
+            }
+        }
             foreach (var slot in relicSlots)
             {
                 if (slot.itemData == null)
                 {
+                    int amountToAdd = Mathf.Min(itemSO.stackSize, quantity);
                     slot.itemData = itemSO;
                     slot.quantity = quantity;
                     slot.UpdateUI();
@@ -47,7 +65,6 @@ public class InventoryManager : MonoBehaviour
                     return;
                 }
             }
-        }
     }
 
     public void UseRelicFromSlot(InventorySlot slot)
