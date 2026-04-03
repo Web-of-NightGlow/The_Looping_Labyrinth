@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: BootsOfSwiftness
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   itemName: Boots Of Swiftness
-  itemDescription: Boots that have been forged with the writings of a magical book.
+  itemDescription: Boots that have been forged with the writings of an enchanted
+    book.
   itemIcon: {fileID: 4113007716044355945, guid: 294913dd5890ac8428e61f353b1ed87d, type: 3}
   isGold: 0
+  stackSize: 99
   currentHealth: 0
   maxHealth: 0
   speed: 5

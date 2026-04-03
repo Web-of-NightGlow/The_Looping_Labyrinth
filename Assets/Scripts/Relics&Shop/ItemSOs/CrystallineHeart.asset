@@ -16,7 +16,8 @@ MonoBehaviour:
   itemDescription: A heart shaped crystal from a terrain based world.
   itemIcon: {fileID: -5453514370919266343, guid: 331c11c22a92fc048a39c61c8d07efc0, type: 3}
   isGold: 0
-  currentHealth: 5
-  maxHealth: 0
+  stackSize: 99
+  currentHealth: 0
+  maxHealth: 5
   speed: 0
   damage: 0

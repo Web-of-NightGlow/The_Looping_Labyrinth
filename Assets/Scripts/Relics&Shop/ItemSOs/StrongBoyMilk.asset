@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: StrongBoyMilk
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   itemName: Strong Boy Milk
-  itemDescription: Daniel's milk said to increase the power of those who consume
+  itemDescription: Daniel's milk, said to increase the power of those who consume
     it.
   itemIcon: {fileID: 6514233343105728316, guid: 117896a204d947d44afc6d277967fd02, type: 3}
   isGold: 0
+  stackSize: 99
   currentHealth: 0
   maxHealth: 0
   speed: 0
