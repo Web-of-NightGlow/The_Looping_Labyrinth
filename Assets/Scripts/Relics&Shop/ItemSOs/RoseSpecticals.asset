@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b194594c9bd64283e9f999431128e, type: 3}
+  m_Name: RoseSpecticals
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSO
+  itemName: Rose Specticals
+  itemDescription: Glasses made for revenge
+  itemIcon: {fileID: -2592549307287086418, guid: a238f41bf47892445a1b046298c7ad62, type: 3}
+  isGold: 0
+  stackSize: 99
+  currentHealth: 0
+  maxHealth: 0
+  speed: 0
+  damage: 20

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b194594c9bd64283e9f999431128e, type: 3}
+  m_Name: TotallyLegalPills
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSO
+  itemName: Totally Legal Pills
+  itemDescription: Bag of multi-colored "normal" pills
+  itemIcon: {fileID: -8650751879047551319, guid: f9cdeaca1eea9a5489fe58a5fac5f293, type: 3}
+  isGold: 0
+  stackSize: 99
+  currentHealth: 0
+  maxHealth: 0
+  speed: 0
+  damage: 20

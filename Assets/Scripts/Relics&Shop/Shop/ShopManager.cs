@@ -4,17 +4,11 @@ using System.Collections.Generic;
 
 public class ShopManager : MonoBehaviour
 {
-    [SerializeField] private List<ShopRelics> shopRelics;
     [SerializeField] private ShopSlot[] shopSlots;
     [SerializeField] private InventoryManager inventoryManager;
 
-    //temp
-    private void Start()
-    {
-        PopulateShopItems();
-    }
 
-    public void PopulateShopItems()
+    public void PopulateShopItems(List<ShopRelics> shopRelics)
     {
         for (int i = 0; i < shopRelics.Count && i < shopSlots.Length; i++)
         {
