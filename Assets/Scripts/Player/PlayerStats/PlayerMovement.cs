@@ -8,6 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public PlayerCombat playerCombat;
     public bool isShooting;
 
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); // if used
+    }
+
+
     private void Update()
     {
         if(Input.GetButtonDown("Slash"))

@@ -11,14 +11,16 @@ public class SceneChanger : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D collision)
    {
+      Debug.Log("Something has entered the trigger");
       if (collision.gameObject.tag == "Player")
       {
-        fadeAnimator.Play("FadeToBlack");
-        StartCoroutine(LoadSceneAfterFade());
+         Debug.Log("Player entered the trigger, starting fade and scene change.");
+         fadeAnimator.Play("FadeToBlack");
+         StartCoroutine(DelayFade());
       }
    }
 
-   IEnumerator LoadSceneAfterFade()
+   IEnumerator DelayFade()
    {
       yield return new WaitForSeconds(fadeDuration);
       SceneManager.LoadScene(sceneToLoad);
