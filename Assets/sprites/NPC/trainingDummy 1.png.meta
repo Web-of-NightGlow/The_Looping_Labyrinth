@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a61d58cbaa57c8f41b143a451eff8df8
+guid: 2600fce8e28b6d0479e8e579f13d1804
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2853742995433600920
-    second: trainingDummy_0
+      213: -3349969765521182593
+    second: trainingDummy 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trainingDummy_0
+      name: trainingDummy 1_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 0
-        width: 14
-        height: 14
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 897341372288a9720800000000000000
-      internalID: 2853742995433600920
+      spriteID: f70bfc54f348281d0800000000000000
+      internalID: -3349969765521182593
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      trainingDummy_0: 2853742995433600920
+      trainingDummy 1_0: -3349969765521182593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
