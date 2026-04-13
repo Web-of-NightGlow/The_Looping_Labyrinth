@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static GameManager Instance;
+    public DialogueManager dialogueManager;
 
     [Header("Persistant Objects")]
     public GameObject[] persistantObjects;

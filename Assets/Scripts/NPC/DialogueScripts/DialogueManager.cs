@@ -4,7 +4,6 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance;
     [Header("UI References")]
     public CanvasGroup canvasGroup;
     public TMP_Text actorName;
@@ -18,14 +17,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
