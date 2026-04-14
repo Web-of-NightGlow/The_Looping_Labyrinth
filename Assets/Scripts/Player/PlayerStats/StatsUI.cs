@@ -42,15 +42,30 @@ public class StatsUI : MonoBehaviour
         statsSlots[0].GetComponentInChildren<TMP_Text>().text = "Strength: " + StatsManager.Instance.damage;
     }
 
+
     public void UpdateSpeed()
     {
         statsSlots[1].GetComponentInChildren<TMP_Text>().text = "Speed: " + StatsManager.Instance.moveSpeed;
     }
 
-    
+
+    // public void UpdateDexterity()
+    // {
+    //     statsSlots[3].GetComponentInChildren<TMP_Text>().text = "Dexterity: " + StatsManager.Instance.dexterity;
+    // }
+
+
+    public void UpdateHealth()
+    {
+        statsSlots[2].GetComponentInChildren<TMP_Text>().text = "Health: " + StatsManager.Instance.currentHealth + "/" + StatsManager.Instance.maxHealth;
+    }
+
+
     public void UpdateAllStats()
     {
         UpdateStrength();
         UpdateSpeed();
+        //UpdateDexterity();
+        UpdateHealth();
     }
 }

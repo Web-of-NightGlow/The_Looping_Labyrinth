@@ -15,4 +15,5 @@ public class ItemSO : ScriptableObject
     public int maxHealth;
     public int speed;
     public int damage;
+    public int attackSpeed;
 }

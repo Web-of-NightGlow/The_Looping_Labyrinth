@@ -17,6 +17,9 @@ public class StatsManager : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    //[Header("Dexterity Stats")]
+    //public int dexterity;
+
     private void Awake()
 {
     if (Instance == null)
@@ -43,6 +46,11 @@ public class StatsManager : MonoBehaviour
     public void UpdateStrength(int amount)
     {
         damage += amount;
-        statsUI.UpdateAllStats();
     }
+
+    // public void UpdateAttackSpeed(float amount)
+    // {
+    //     attackCooldown -= amount;
+    //     statsUI.UpdateAllStats();
+    // }
 }

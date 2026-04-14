@@ -12,5 +12,8 @@ public class UseRelic : MonoBehaviour
 
         if(itemSO.damage > 0)
             StatsManager.Instance.UpdateStrength(itemSO.damage);
+
+        // if(itemSO.attackSpeed > 0)
+        //     StatsManager.Instance.UpdateAttackSpeed(itemSO.attackSpeed);
     }
 }
