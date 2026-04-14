@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: doorwayClosedNS_0
+  m_Name: doorwayClosedBIG_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 8739059034004921426, guid: 7e0aa39c6c29e4045ad4bd147eeaaaa7, type: 3}
+  m_Sprite: {fileID: -5795133658959883863, guid: 0c468d3bcb860c041b222e7e23d121dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

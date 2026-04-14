@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5143f981415d3ac4eb77c64df45fe310, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5d7b85cf1ad21ce44a5351cf74caad6c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -138,7 +138,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_Torch
+  m_Name: Enemy_Zomb
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isIdle
@@ -193,7 +193,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 014395d1d28ed394ba12f6346f44672c, type: 2}
+  m_Motion: {fileID: 7400000, guid: def15f3b34e0b544ca5618d3ae904e91, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -254,7 +254,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6606cfca538394448b9f6bc990abeea0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 900eda7b1221d1240a0b1f4ca880dcbc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
