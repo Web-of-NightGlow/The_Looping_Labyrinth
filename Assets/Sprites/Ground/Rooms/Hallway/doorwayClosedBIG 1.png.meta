@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0c468d3bcb860c041b222e7e23d121dd
+guid: cea630b7f53da3b4b9ac427c6a1f3e77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5795133658959883863
-    second: doorwayClosedBIG_0
+      213: 1541276589480536864
+    second: doorwayClosedBIG 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doorwayClosedBIG_0
+      name: doorwayClosedBIG 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a159cf14ac839fa0800000000000000
-      internalID: -5795133658959883863
+      spriteID: 02bec9064e6b36510800000000000000
+      internalID: 1541276589480536864
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7e470e59a98227f4e8a2827604b17f36
+    spriteID: 3c91b4242e4dd864ca8bd6f0ca3f6a53
     internalID: 0
     vertices: []
     indices: 
@@ -148,9 +148,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      doorwayClosedBIG_0: -5795133658959883863
+      doorwayClosedBIG 1_0: 1541276589480536864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

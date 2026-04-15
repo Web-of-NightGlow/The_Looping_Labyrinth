@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 683e7f82b842d5d479519f13f7534222
+guid: 7d1a17fac723ea04997d352c06fe6e6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 38160805354301218
-    second: doorwayOpenBIG_0
+      213: 2873793309875365301
+    second: doorwayOpenBIG 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doorwayOpenBIG_0
+      name: doorwayOpenBIG 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2276c7fdc03978000800000000000000
-      internalID: 38160805354301218
+      spriteID: 5b5e3011ac3c1e720800000000000000
+      internalID: 2873793309875365301
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 01fe513c91f1f6b4e88ed382febccc4f
+    spriteID: b292701740e308a43b6a9b3a63e5ef5a
     internalID: 0
     vertices: []
     indices: 
@@ -148,9 +148,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      doorwayOpenBIG_0: 38160805354301218
+      doorwayOpenBIG 1_0: 2873793309875365301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
