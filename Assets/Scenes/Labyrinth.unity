@@ -3765,7 +3765,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3810,8 +3810,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   sr: {fileID: 1565257004}
   col: {fileID: 1565257005}
-  openSprite: {fileID: -5795133658959883863, guid: 0c468d3bcb860c041b222e7e23d121dd, type: 3}
-  closedSprite: {fileID: 38160805354301218, guid: 683e7f82b842d5d479519f13f7534222, type: 3}
+  openSprite: {fileID: 38160805354301218, guid: 683e7f82b842d5d479519f13f7534222, type: 3}
+  closedSprite: {fileID: -5795133658959883863, guid: 0c468d3bcb860c041b222e7e23d121dd, type: 3}
 --- !u!1001 &1573684591
 PrefabInstance:
   m_ObjectHideFlags: 0

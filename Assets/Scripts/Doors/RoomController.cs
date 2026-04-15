@@ -10,6 +10,8 @@ public class RoomController : MonoBehaviour
 
     private void Start()
     {
+        enemies.Clear();
+
         foreach (Transform child in transform)
         {
             if (child.CompareTag("Enemy"))
@@ -21,6 +23,8 @@ public class RoomController : MonoBehaviour
 
     public void ActivateRoom()
     {
+        if (roomActive) return;
+
         roomActive = true;
         CloseDoors();
     }
@@ -28,10 +32,11 @@ public class RoomController : MonoBehaviour
     public void EnemyDied(GameObject enemy)
     {
         enemies.Remove(enemy);
+        Debug.Log("Enemies left: " + enemies.Count);
 
         if (enemies.Count == 0 && roomActive)
         {
-            ActivateRoom();
+            OpenDoors();
         }
     }
 

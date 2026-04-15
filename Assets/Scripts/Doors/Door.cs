@@ -10,12 +10,14 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
+        Debug.Log("Opening door");
         sr.sprite = openSprite;
         col.enabled = false;
     }
 
     public void CloseDoor()
     {
+        Debug.Log("Closing door");
         sr.sprite = closedSprite;
         col.enabled = true;
     }
