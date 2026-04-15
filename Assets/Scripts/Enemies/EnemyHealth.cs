@@ -4,14 +4,23 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public RoomController room;
     public int currentHealth = 4;
     public int maxHealth = 4;
     public GameObject popUpPrefab;
+
+
+    void Awake()
+    {
+        room = GetComponentInParent<RoomController>();
+    }
+
 
     private void Start()
     {
         currentHealth = maxHealth;
     }
+
 
     public void ChangeHealth(int amount)
     {
@@ -25,7 +34,14 @@ public class EnemyHealth : MonoBehaviour
         }
         else if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+
+    public void Die()
+    {
+        room.EnemyDied(gameObject);
+        Destroy(gameObject);
     }
 }
