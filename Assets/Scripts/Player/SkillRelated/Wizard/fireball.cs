@@ -6,7 +6,7 @@ public class fireball: MonoBehaviour
     public Vector2 direction = Vector2.right;
     public float lifeSpan = 2;
     public float speed;
-    public int damage;
+    public StatsUI statsUI;
 
     public LayerMask enemyLayer;
     public LayerMask obstacleLayer;
@@ -32,7 +32,7 @@ public class fireball: MonoBehaviour
     {
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-damage);
+            collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-(StatsManager.Instance.damage)*2);
         }
         else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
