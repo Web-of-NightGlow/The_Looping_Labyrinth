@@ -181,8 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   rb: {fileID: 7702538524151818965}
   direction: {x: 1, y: 0}
-  lifeSpan: 2
-  speed: 8
+  lifeSpan: 1.5
+  speed: 12
   damage: 2
   enemyLayer:
     serializedVersion: 2
