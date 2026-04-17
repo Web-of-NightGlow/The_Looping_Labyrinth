@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b26617e7df721c4d9dec8f3321d2e09, type: 3}
+  m_Name: CharacterDataBase
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterDataBase
+  character:
+  - characterName: Goblin Paladin
+    characterBonus: Speed + 5
+    characterClass: Paladin
+    characterRace: Goblin
+    characterSprite: {fileID: -633718952327297887, guid: d32a19686abe5d74289c52e6839527e3, type: 3}
+  - characterName: Goblin Rogue
+    characterBonus: Speed + 5
+    characterClass: Rogue
+    characterRace: Goblin
+    characterSprite: {fileID: 1073518423330047252, guid: c1acf1e38f387c64198e5b2aff4420a4, type: 3}
+  - characterName: Goblin Wizard
+    characterBonus: Speed + 5
+    characterClass: Wizard
+    characterRace: Goblin
+    characterSprite: {fileID: -9132005526151995186, guid: 8b732b14599b4f44d80c2159e61c00a9, type: 3}
+  - characterName: Human Paladin
+    characterBonus: Health + 5
+    characterClass: Paladin
+    characterRace: Human
+    characterSprite: {fileID: 2502716560772617674, guid: ced87323c4228ec42adef0a430a2088a, type: 3}
+  - characterName: Human Rogue
+    characterBonus: Health + 5
+    characterClass: Rogue
+    characterRace: Human
+    characterSprite: {fileID: -4667382152602057022, guid: 32da8855d4cd426479918992bf9b338c, type: 3}
+  - characterName: Human Wizard
+    characterBonus: Health + 5
+    characterClass: Wizard
+    characterRace: Human
+    characterSprite: {fileID: 888776203088456283, guid: 1aed0eef5f007564ba405b6307634dbc, type: 3}
+  - characterName: Orc Paladin
+    characterBonus: Strength + 5
+    characterClass: Paladin
+    characterRace: Orc
+    characterSprite: {fileID: -6892159232659107472, guid: 55d8d2d3a7f73484d9625fcb16f6b052, type: 3}
+  - characterName: Orc Rogue
+    characterBonus: Strength + 5
+    characterClass: Rogue
+    characterRace: Orc
+    characterSprite: {fileID: 3989822897925068499, guid: 27a238f605f46ca48a5c566d345aaf87, type: 3}
+  - characterName: Orc Wizard
+    characterBonus: Strength + 5
+    characterClass: Wizard
+    characterRace: Orc
+    characterSprite: {fileID: 2382780244141949151, guid: 9cf266c6e875ef54483b335a1a976232, type: 3}

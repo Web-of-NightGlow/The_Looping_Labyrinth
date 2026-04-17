@@ -1,10 +1,11 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Character", menuName = "Scriptable Objects/Character")]
 [System.Serializable]
-public class Character : ScriptableObject
+public class Character
 {
     public string characterName;
     public string characterBonus;
+    public string characterClass;
+    public string characterRace;
     public Sprite characterSprite;
 }
