@@ -1,10 +1,34 @@
 fileFormatVersion: 2
-guid: 32da8855d4cd426479918992bf9b338c
+guid: 74b43f3e91ff2c44485173edc287b6d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4667382152602057022
-    second: human1Rogue_temp_0
+      213: -2017026541979516980
+    second: human1Rogue_temp 1_0
+  - first:
+      213: -4539823159285314289
+    second: human1Rogue_temp 1_1
+  - first:
+      213: -8768555076415519719
+    second: human1Rogue_temp 1_2
+  - first:
+      213: 2425967351433507369
+    second: human1Rogue_temp 1_3
+  - first:
+      213: 510052989377794904
+    second: human1Rogue_temp 1_4
+  - first:
+      213: -2271138606146178424
+    second: human1Rogue_temp 1_5
+  - first:
+      213: 5446424975136720789
+    second: human1Rogue_temp 1_6
+  - first:
+      213: -46160457873858867
+    second: human1Rogue_temp 1_7
+  - first:
+      213: 6805399951017839734
+    second: human1Rogue_temp 1_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,10 +150,186 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2c6082b39a02a3fb0800000000000000
-      internalID: -4667382152602057022
+      spriteID: 18092ae61dce7b140893e0ee31e28786
+      internalID: -1267620689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9814535dd867614eaec4a469d72ddc1
+      internalID: -367159391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b250d2fe9e98f5b4abfc5a503526b1a6
+      internalID: -569008137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1560000def5734290bf2127a046d3c
+      internalID: 251748362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588e5c99d85e5f04fa252eb38fad1618
+      internalID: -454811857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c250c28912a1442840108be2743597
+      internalID: 1332121731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca43776e48a779a43aa957efd912c919
+      internalID: 1657544482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffdfc92734cb0f44b7ed6cff2768c34
+      internalID: -2023228512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human1Rogue_temp_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a5c016cb5bc414498a1faab2a514b5
+      internalID: 1757123899
       vertices: []
       indices: 
       edges: []
@@ -138,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9fb0617e116b3464b86711b45eb9ccc6
+    spriteID: 99323b19f26eaca4289898c8b0646039
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +350,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      human1Rogue_temp_0: -4667382152602057022
+      human1Rogue_temp_0: -1267620689
+      human1Rogue_temp_1: -367159391
+      human1Rogue_temp_2: -569008137
+      human1Rogue_temp_3: 251748362
+      human1Rogue_temp_4: -454811857
+      human1Rogue_temp_5: 1332121731
+      human1Rogue_temp_6: 1657544482
+      human1Rogue_temp_7: -2023228512
+      human1Rogue_temp_8: 1757123899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

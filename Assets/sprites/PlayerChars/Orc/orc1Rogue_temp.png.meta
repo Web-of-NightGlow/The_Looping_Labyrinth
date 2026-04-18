@@ -1,10 +1,34 @@
 fileFormatVersion: 2
-guid: 27a238f605f46ca48a5c566d345aaf87
+guid: e4ec419f638e4ef45a1c4dcda7a71ac9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3989822897925068499
-    second: orc1Rogue_temp_0
+      213: 2645927282049945173
+    second: orc1Rogue_temp 1_0
+  - first:
+      213: 2407460630143052332
+    second: orc1Rogue_temp 1_1
+  - first:
+      213: -8195361496796272258
+    second: orc1Rogue_temp 1_2
+  - first:
+      213: 8114994806147057707
+    second: orc1Rogue_temp 1_3
+  - first:
+      213: -7152493398235703204
+    second: orc1Rogue_temp 1_4
+  - first:
+      213: 3766261044544263147
+    second: orc1Rogue_temp 1_5
+  - first:
+      213: 5537616493879471079
+    second: orc1Rogue_temp 1_6
+  - first:
+      213: -1251694614671039570
+    second: orc1Rogue_temp 1_7
+  - first:
+      213: -8868095147340166747
+    second: orc1Rogue_temp 1_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orc1Rogue_temp_0
+      name: orc1Rogue_temp 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
+        y: 0
         width: 32
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +152,184 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d61b8369c2be5730800000000000000
-      internalID: 3989822897925068499
+      spriteID: 55e0a1428d838b420800000000000000
+      internalID: 2645927282049945173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a2a6610b4096120800000000000000
+      internalID: 2407460630143052332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e796b89b32a344e80800000000000000
+      internalID: -8195361496796272258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b280986f7c04e9070800000000000000
+      internalID: 8114994806147057707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5895db562d3dbc90800000000000000
+      internalID: -7152493398235703204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3d37b2772744430800000000000000
+      internalID: 3766261044544263147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eba7049cd099dc40800000000000000
+      internalID: 5537616493879471079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea36345316611aee0800000000000000
+      internalID: -1251694614671039570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc1Rogue_temp 1_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a98c6cd2723ee480800000000000000
+      internalID: -8868095147340166747
       vertices: []
       indices: 
       edges: []
@@ -138,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dd42358ba952f814ca36c3be0d1fd6a9
+    spriteID: f6434db863998444e9ae41a422e1ecee
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +350,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      orc1Rogue_temp_0: 3989822897925068499
+      orc1Rogue_temp 1_0: 2645927282049945173
+      orc1Rogue_temp 1_1: 2407460630143052332
+      orc1Rogue_temp 1_2: -8195361496796272258
+      orc1Rogue_temp 1_3: 8114994806147057707
+      orc1Rogue_temp 1_4: -7152493398235703204
+      orc1Rogue_temp 1_5: 3766261044544263147
+      orc1Rogue_temp 1_6: 5537616493879471079
+      orc1Rogue_temp 1_7: -1251694614671039570
+      orc1Rogue_temp 1_8: -8868095147340166747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

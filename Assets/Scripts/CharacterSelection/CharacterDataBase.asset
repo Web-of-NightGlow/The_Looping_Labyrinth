@@ -17,17 +17,17 @@ MonoBehaviour:
     characterBonus: Speed + 5
     characterClass: Paladin
     characterRace: Goblin
-    characterSprite: {fileID: -633718952327297887, guid: d32a19686abe5d74289c52e6839527e3, type: 3}
+    characterSprite: {fileID: -3769692431204657356, guid: 672ea8854be86a0419d3dd6d5ff596fc, type: 3}
   - characterName: Goblin Rogue
     characterBonus: Speed + 5
     characterClass: Rogue
     characterRace: Goblin
-    characterSprite: {fileID: 1073518423330047252, guid: c1acf1e38f387c64198e5b2aff4420a4, type: 3}
+    characterSprite: {fileID: -76919792871430073, guid: 1f4c56e90ec771242840a1904f4aab96, type: 3}
   - characterName: Goblin Wizard
     characterBonus: Speed + 5
     characterClass: Wizard
     characterRace: Goblin
-    characterSprite: {fileID: -9132005526151995186, guid: 8b732b14599b4f44d80c2159e61c00a9, type: 3}
+    characterSprite: {fileID: -6273924272496406711, guid: c2e86644c039d3d49904d403a372b97a, type: 3}
   - characterName: Human Paladin
     characterBonus: Health + 5
     characterClass: Paladin
@@ -37,7 +37,7 @@ MonoBehaviour:
     characterBonus: Health + 5
     characterClass: Rogue
     characterRace: Human
-    characterSprite: {fileID: -4667382152602057022, guid: 32da8855d4cd426479918992bf9b338c, type: 3}
+    characterSprite: {fileID: -1267620689, guid: 74b43f3e91ff2c44485173edc287b6d6, type: 3}
   - characterName: Human Wizard
     characterBonus: Health + 5
     characterClass: Wizard
@@ -47,14 +47,14 @@ MonoBehaviour:
     characterBonus: Strength + 5
     characterClass: Paladin
     characterRace: Orc
-    characterSprite: {fileID: -6892159232659107472, guid: 55d8d2d3a7f73484d9625fcb16f6b052, type: 3}
+    characterSprite: {fileID: -1248513604, guid: ab8600e6df5c44c4299e07ee502215ae, type: 3}
   - characterName: Orc Rogue
     characterBonus: Strength + 5
     characterClass: Rogue
     characterRace: Orc
-    characterSprite: {fileID: 3989822897925068499, guid: 27a238f605f46ca48a5c566d345aaf87, type: 3}
+    characterSprite: {fileID: 2645927282049945173, guid: e4ec419f638e4ef45a1c4dcda7a71ac9, type: 3}
   - characterName: Orc Wizard
     characterBonus: Strength + 5
     characterClass: Wizard
     characterRace: Orc
-    characterSprite: {fileID: 2382780244141949151, guid: 9cf266c6e875ef54483b335a1a976232, type: 3}
+    characterSprite: {fileID: -2013020839563481794, guid: a17cfa444112f4744a64821bfdc9d783, type: 3}
