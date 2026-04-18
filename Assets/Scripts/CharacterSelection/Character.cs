@@ -7,9 +7,8 @@ public class Character
     public string characterBonus;
     public Sprite characterSprite;
 
-    public bool isWizard;
-    public bool isPaladin;
-    public bool isRogue;
+    public string characterClass;
+    public string characterRace;
 
     public int bonusHealth;
     public int bonusSpeed;

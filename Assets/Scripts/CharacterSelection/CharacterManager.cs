@@ -76,6 +76,12 @@ public class CharacterManager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        Character character = characterDB.GetCharacter(selectedCharacter);
+
+        // Assign to PlayerSelection
+        PlayerSelection.Instance.selectedClass = character.characterClass;
+        PlayerSelection.Instance.selectedRace = character.characterRace;
+
+        SceneManager.LoadScene(sceneName);
     }
 }

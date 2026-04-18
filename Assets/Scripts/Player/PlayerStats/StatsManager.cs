@@ -20,17 +20,20 @@ public class StatsManager : MonoBehaviour
     //[Header("Dexterity Stats")]
     //public int dexterity;
 
-    private void Awake()
-{
-    if (Instance == null)
+
+        void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-    else
-    {
-        Destroy(gameObject);
-    }
-}
+
 
     public void UpdateMaxHealth(int amount)
     {

@@ -2,19 +2,25 @@ using UnityEngine;
 
 public class ToggleCharacterClass : MonoBehaviour
 {
-    
+    public PlayerVisualController playerVisual;
     public Player_CastMagic wizard;
     public PlayerCombat paladin;
     //public Player_Rogue rogue;
     public StatsManager statsManager;
+
 
     private void Start()
     {
         ApplySelection();
     }
 
+
     void ApplySelection()
     {
+        Debug.Log("Selection: " + PlayerSelection.Instance);
+        Debug.Log("Wizard ref: " + wizard);
+        Debug.Log("Paladin ref: " + paladin);
+        Debug.Log("StatsManager: " + StatsManager.Instance);
         var selection = PlayerSelection.Instance;
 
         if (selection == null)
@@ -64,6 +70,16 @@ public class ToggleCharacterClass : MonoBehaviour
         else
         {
             Debug.LogWarning("Unknown race selected: " + selection.selectedRace);
+        }
+
+
+        if (playerVisual != null)
+        {
+            playerVisual.SetAppearance(selection.selectedRace, selection.selectedClass);
+        }
+        else
+        {
+            Debug.LogWarning("PlayerVisualController not assigned!");
         }
     }
 }

@@ -55318,11 +55318,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 163343061997517651, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: m_Size.y
-      value: 1.5360903
+      value: 1.2197202
       objectReference: {fileID: 0}
     - target: {fileID: 163343061997517651, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: m_Offset.y
-      value: -0.15819454
+      value: -0.13057455
       objectReference: {fileID: 0}
     - target: {fileID: 590264493347332082, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: slider
@@ -55332,6 +55332,18 @@ PrefabInstance:
       propertyPath: popUpPrefab
       value: 
       objectReference: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
+    - target: {fileID: 823590934796481226, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: wizard
+      value: 
+      objectReference: {fileID: 1182991243965496806}
+    - target: {fileID: 823590934796481226, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: paladin
+      value: 
+      objectReference: {fileID: 1182991243965496805}
+    - target: {fileID: 823590934796481226, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: statsManager
+      value: 
+      objectReference: {fileID: 7983297524378188021}
     - target: {fileID: 2504275784482499311, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5900002
@@ -55385,6 +55397,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+--- !u!114 &1182991243965496805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8567764985776041020, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+  m_PrefabInstance: {fileID: 1182991243965496804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188929179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff00182f4a184f48885a95b78eff483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+--- !u!114 &1182991243965496806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5789348962587484674, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+  m_PrefabInstance: {fileID: 1182991243965496804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188929179}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd36748982f9f51448548b191830c5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_CastMagic
 --- !u!1001 &1937939394134129563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56074,6 +56108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatsManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6162263599232046305, guid: 2817b1e2ae0044e4ebaba960817cff45, type: 3}
+      propertyPath: statsUI
+      value: 
+      objectReference: {fileID: 1399596723}
     - target: {fileID: 9108372485294580004, guid: 2817b1e2ae0044e4ebaba960817cff45, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.2428093
@@ -56119,6 +56157,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2817b1e2ae0044e4ebaba960817cff45, type: 3}
+--- !u!114 &7983297524378188021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6162263599232046305, guid: 2817b1e2ae0044e4ebaba960817cff45, type: 3}
+  m_PrefabInstance: {fileID: 7983297524378188020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90765609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc03cdc6edae98340928609a83407646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatsManager
 --- !u!1001 &8039679915819029458
 PrefabInstance:
   m_ObjectHideFlags: 0
