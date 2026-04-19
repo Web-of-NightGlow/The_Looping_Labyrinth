@@ -8,4 +8,12 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Goblin_Rogue
   m_Controller: {fileID: 9100000, guid: 40a59b07cff9cd142bc045821f4a87fb, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6f2813295b9ba444cafd8da263dae147, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f661e2400fb1edb46aad07bfbd1bd75d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0a051dc821c6d5e498ddabcaff920657, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2006c10fffefe7445aa991c476c5684e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 297d27a005c6fa04bbc89de74e2e2db8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a131aa85ace31ac40a9aebc0a7f824e7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2b30f540ad6a271438c003bc9a02d70b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4a4f08d40bde2bd49a3c2e2be4e47bb2, type: 2}

@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 8567764985776041020}
   - component: {fileID: 5789348962587484674}
   - component: {fileID: 823590934796481226}
+  - component: {fileID: 8472392569311553094}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -166,8 +167,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0066096783, y: -0.15819454}
-  m_Size: {x: 0.6548574, y: 1.5360903}
+  m_Offset: {x: 0.0066096783, y: -0.13057455}
+  m_Size: {x: 0.6548574, y: 1.2197202}
   m_Direction: 0
 --- !u!50 &1304856663585319705
 Rigidbody2D:
@@ -296,8 +297,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e550412aebb222541abca51fcfc2a596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleCharacterClass
-  playerCombat: {fileID: 8567764985776041020}
-  playerCastMagic: {fileID: 5789348962587484674}
+  playerVisual: {fileID: 8472392569311553094}
+  wizard: {fileID: 5789348962587484674}
+  paladin: {fileID: 8567764985776041020}
+  statsManager: {fileID: 0}
+--- !u!114 &8472392569311553094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7238155708142635431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9312550b29b0741aaf783ea415e732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerVisualController
+  animator: {fileID: 7075072640717557611}
+  characterSets:
+  - race: 
+    characterClass: 
+    overrideController: {fileID: 0}
+  - race: Goblin
+    characterClass: Rogue
+    overrideController: {fileID: 22100000, guid: ae647c4db67d416409159a8039391934, type: 2}
+  - race: Goblin
+    characterClass: Wizard
+    overrideController: {fileID: 22100000, guid: a00bfd49b2f554e48902e8983a7a6f64, type: 2}
+  - race: Human
+    characterClass: Paladin
+    overrideController: {fileID: 22100000, guid: a00bfd49b2f554e48902e8983a7a6f64, type: 2}
+  - race: Human
+    characterClass: Rogue
+    overrideController: {fileID: 22100000, guid: 6fe3bff15c214fd4da005df7f60a2bfb, type: 2}
+  - race: Human
+    characterClass: Wizard
+    overrideController: {fileID: 22100000, guid: 028925b1bc336984e880e6c5f0f34e62, type: 2}
+  - race: Orc
+    characterClass: Paladin
+    overrideController: {fileID: 22100000, guid: fa29dbd8cf4cc014d90b6cb054dbb8be, type: 2}
+  - race: Orc
+    characterClass: Rogue
+    overrideController: {fileID: 22100000, guid: e4600e136f65dd542b612bf16a0bebf3, type: 2}
+  - race: Orc
+    characterClass: Wizard
+    overrideController: {fileID: 22100000, guid: 573fc413322403a478648b1f7ef70161, type: 2}
 --- !u!1 &9221548419058761994
 GameObject:
   m_ObjectHideFlags: 0

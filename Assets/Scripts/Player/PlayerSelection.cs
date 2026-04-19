@@ -6,9 +6,6 @@ public class PlayerSelection : MonoBehaviour
 
     public string selectedClass;
     public string selectedRace;
-    // public int bonusHealth;
-    // public int bonusSpeed;
-    // public int bonusDamage;
 
     private void Awake()
     {

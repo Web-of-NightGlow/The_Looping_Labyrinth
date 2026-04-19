@@ -4,15 +4,15 @@ public class fireball: MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 direction = Vector2.right;
-    public float lifeSpan = 2;
-    public float speed;
-    public StatsUI statsUI;
-
     public LayerMask enemyLayer;
     public LayerMask obstacleLayer;
-
     public SpriteRenderer sr;
     public Sprite buriedSprite;
+    //public StatsUI statsUI;
+    public float lifeSpan = 2;
+    public float speed;
+    public float damageMultiplier = 2f;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,7 +32,7 @@ public class fireball: MonoBehaviour
     {
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-(StatsManager.Instance.damage)*2);
+            collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-(StatsManager.Instance.damage * damageMultiplier));
         }
         else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
         {

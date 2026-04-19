@@ -8,4 +8,12 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Orc_Wizard
   m_Controller: {fileID: 9100000, guid: 40a59b07cff9cd142bc045821f4a87fb, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6f2813295b9ba444cafd8da263dae147, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 36df1e4506c630a4e9807e76d4970db6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 297d27a005c6fa04bbc89de74e2e2db8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f6590b3a5f95ae84d915f0c45819eea5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2b30f540ad6a271438c003bc9a02d70b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 894cfda9b3d9a8844929b90141e24dd1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0a051dc821c6d5e498ddabcaff920657, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8482b1b8ed8d7454db9d463c6feed64d, type: 2}
