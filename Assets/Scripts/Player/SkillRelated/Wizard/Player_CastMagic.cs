@@ -8,6 +8,8 @@ public class Player_CastMagic : MonoBehaviour
     public Animator anim;
     public float primaryCooldown = 0.5f;
     public float secondaryCooldown = 1.2f;
+    public float castTimer = 0f;
+    private bool useSecondary = false;
 
     private float primaryTimer;
     private float secondaryTimer;
@@ -30,7 +32,7 @@ public class Player_CastMagic : MonoBehaviour
             playerMovement.isShooting = true;
             anim.SetBool("isShooting", true);
 
-            ShootSpread(); // 👈 call new ability
+            useSecondary = true; // 👈 NEW FLAG
         }
     }
 
@@ -64,34 +66,31 @@ public class Player_CastMagic : MonoBehaviour
 
     public void Shoot()
     {
-        if (castTimer <= 0)
+        if (useSecondary)
+        {
+            ShootSpreadInternal();
+            castTimer = secondaryCooldown;
+        }
+        else
         {
             SpawnFireball(aimDirection);
             castTimer = primaryCooldown;
         }
+
+        useSecondary = false;
 
         anim.SetBool("isShooting", false);
         playerMovement.isShooting = false;
     }
 
 
-    void ShootSpread()
+    void ShootSpreadInternal()
     {
-        if (castTimer > 0) return;
+        float spreadAngle = 20f;
 
-        float spreadAngle = 20f; 
-        fb.damageMultiplier = 1.5f;
-
-        // Center shot
         SpawnFireball(aimDirection);
-
-        // Left shot
         SpawnFireball(RotateVector(aimDirection, -spreadAngle));
-
-        // Right shot
         SpawnFireball(RotateVector(aimDirection, spreadAngle));
-
-        castTimer = primaryCooldown;
 
         anim.SetBool("isShooting", false);
         playerMovement.isShooting = false;
@@ -104,6 +103,7 @@ public class Player_CastMagic : MonoBehaviour
                     .GetComponent<fireball>();
 
         fb.direction = direction.normalized;
+        fb.damageMultiplier = 1.5f;
     }
 
     Vector2 RotateVector(Vector2 v, float degrees)

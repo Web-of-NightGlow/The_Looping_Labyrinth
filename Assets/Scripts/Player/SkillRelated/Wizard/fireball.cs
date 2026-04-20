@@ -8,7 +8,7 @@ public class fireball: MonoBehaviour
     public LayerMask obstacleLayer;
     public SpriteRenderer sr;
     public Sprite buriedSprite;
-    //public StatsUI statsUI;
+    public StatsUI statsUI;
     public float lifeSpan = 2;
     public float speed;
     public float damageMultiplier = 2f;
@@ -32,7 +32,7 @@ public class fireball: MonoBehaviour
     {
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-(StatsManager.Instance.damage * damageMultiplier));
+            collision.gameObject.GetComponent<EnemyHealth>()?.ChangeHealth(-(int)(StatsManager.Instance.damage * damageMultiplier));
         }
         else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
