@@ -20,10 +20,9 @@ public class Player_CastMagic : MonoBehaviour
         HandleAiming();
 
         //PRIMARY
-        if (Input.GetButtonDown("Fire1") && castTimer <= 0)
+        if (Input.GetButtonDown("Fire1") && castTimer <= 0) //Set to K right now
         {
             playerMovement.isShooting = true;
-
             useSecondary = false;
 
             anim.SetBool("isSecond", false);   // ensure secondary is off
@@ -31,10 +30,9 @@ public class Player_CastMagic : MonoBehaviour
         }
 
         //SECONDARY
-        if (Input.GetButtonDown("Fire2") && castTimer <= 0)
+        if (Input.GetButtonDown("Fire2") && castTimer <= 0) //Set to J right now
         {
             playerMovement.isShooting = true;
-
             useSecondary = true;
 
             anim.SetBool("isShooting", false); // ensure primary is off
@@ -64,6 +62,7 @@ public class Player_CastMagic : MonoBehaviour
 
     public void Shoot()
     {
+
         if (useSecondary)
         {
             ShootSpreadInternal();
@@ -75,7 +74,12 @@ public class Player_CastMagic : MonoBehaviour
             castTimer = primaryCooldown;
         }
 
-        FinishShooting();
+        anim.SetBool("isShooting", false);
+        anim.SetBool("isSecond", false);
+
+        playerMovement.isShooting = false;
+
+        useSecondary = false; // keep LAST
     }
 
 
@@ -108,15 +112,5 @@ public class Player_CastMagic : MonoBehaviour
             cos * v.x - sin * v.y,
             sin * v.x + cos * v.y
         );
-    }
-
-
-    public void FinishShooting()
-    {
-        anim.SetBool("isShooting", false);
-        anim.SetBool("isSecond", false);
-
-        playerMovement.isShooting = false;
-        useSecondary = false;
     }
 }

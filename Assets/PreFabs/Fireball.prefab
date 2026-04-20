@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5353841184698615464, guid: 581965826ca325d44b1e02ed67d84c91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -181,9 +181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   rb: {fileID: 7702538524151818965}
   direction: {x: 1, y: 0}
-  lifeSpan: 1.5
-  speed: 12
-  damage: 2
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -192,3 +189,7 @@ MonoBehaviour:
     m_Bits: 128
   sr: {fileID: 6029354126795131696}
   buriedSprite: {fileID: -5219074987883236989, guid: df73b137ddff0194e9e1cd435c3c8008, type: 3}
+  statsUI: {fileID: 0}
+  lifeSpan: 1.5
+  speed: 12
+  damageMultiplier: 2

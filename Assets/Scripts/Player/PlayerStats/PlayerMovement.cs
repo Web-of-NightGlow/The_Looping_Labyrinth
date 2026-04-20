@@ -27,7 +27,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called 50x per frame
     void FixedUpdate()
     {
-        if(isShooting == true)
+        bool isCasting = anim.GetBool("isShooting") || anim.GetBool("isSecond");
+        
+        if (isCasting)
         {
             rb.linearVelocity = Vector2.zero;
         }
