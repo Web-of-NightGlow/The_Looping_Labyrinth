@@ -6,49 +6,47 @@ public class Player_CastMagic : MonoBehaviour
     public GameObject fireballPrefab;
     public PlayerMovement playerMovement;
     public Animator anim;
+
     public float primaryCooldown = 0.5f;
     public float secondaryCooldown = 1.2f;
-    public float castTimer = 0f;
-    private bool useSecondary = false;
+    private float castTimer = 0f;
 
-    private float primaryTimer;
-    private float secondaryTimer;
+    private bool useSecondary = false;
     private Vector2 aimDirection = Vector2.right;
 
-    // Update is called once per frame
     void Update()
     {
-        castTimer -= Time.deltaTime;
+        castTimer = Mathf.Max(0, castTimer - Time.deltaTime);
         HandleAiming();
 
+        //PRIMARY
         if (Input.GetButtonDown("Fire1") && castTimer <= 0)
         {
             playerMovement.isShooting = true;
-            anim.SetBool("isShooting", true);
+
+            useSecondary = false;
+
+            anim.SetBool("isSecond", false);   // ensure secondary is off
+            anim.SetBool("isShooting", true);  // play primary animation
         }
 
+        //SECONDARY
         if (Input.GetButtonDown("Fire2") && castTimer <= 0)
         {
             playerMovement.isShooting = true;
-            anim.SetBool("isShooting", true);
 
-            useSecondary = true; // 👈 NEW FLAG
+            useSecondary = true;
+
+            anim.SetBool("isShooting", false); // ensure primary is off
+            anim.SetBool("isSecond", true);    // play secondary animation
+        }
+
+        //safety net reset
+        if (playerMovement.isShooting && castTimer <= 0)
+        {
+            playerMovement.isShooting = false;
         }
     }
-
-
-    private void OnEnable()
-    {
-        anim.SetLayerWeight(0, 0);
-        anim.SetLayerWeight(1, 1);
-    }
-
-    private void OnDisable()
-    {
-        anim.SetLayerWeight(0, 1);
-        anim.SetLayerWeight(1, 0);
-    }
-
 
     private void HandleAiming()
     {
@@ -77,10 +75,7 @@ public class Player_CastMagic : MonoBehaviour
             castTimer = primaryCooldown;
         }
 
-        useSecondary = false;
-
-        anim.SetBool("isShooting", false);
-        playerMovement.isShooting = false;
+        FinishShooting();
     }
 
 
@@ -91,11 +86,7 @@ public class Player_CastMagic : MonoBehaviour
         SpawnFireball(aimDirection);
         SpawnFireball(RotateVector(aimDirection, -spreadAngle));
         SpawnFireball(RotateVector(aimDirection, spreadAngle));
-
-        anim.SetBool("isShooting", false);
-        playerMovement.isShooting = false;
     }
-
 
     void SpawnFireball(Vector2 direction)
     {
@@ -103,8 +94,9 @@ public class Player_CastMagic : MonoBehaviour
                     .GetComponent<fireball>();
 
         fb.direction = direction.normalized;
-        fb.damageMultiplier = 1.5f;
+        fb.damageMultiplier = useSecondary ? 1.5f : 1f;
     }
+
 
     Vector2 RotateVector(Vector2 v, float degrees)
     {
@@ -116,5 +108,15 @@ public class Player_CastMagic : MonoBehaviour
             cos * v.x - sin * v.y,
             sin * v.x + cos * v.y
         );
+    }
+
+
+    public void FinishShooting()
+    {
+        anim.SetBool("isShooting", false);
+        anim.SetBool("isSecond", false);
+
+        playerMovement.isShooting = false;
+        useSecondary = false;
     }
 }

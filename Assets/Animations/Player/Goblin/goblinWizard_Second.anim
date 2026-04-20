@@ -83,9 +83,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.33333334
-    functionName: ShootSpreadInternal
+    functionName: Shoot
     data: 
-    objectReferenceParameter: {fileID: 931686273801092952, guid: 8d322d4e608fbfb478ce8414c1034d90, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

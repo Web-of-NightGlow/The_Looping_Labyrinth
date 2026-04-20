@@ -9,11 +9,11 @@ AnimatorOverrideController:
   m_Name: Goblin_Wizard
   m_Controller: {fileID: 9100000, guid: 40a59b07cff9cd142bc045821f4a87fb, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 6f2813295b9ba444cafd8da263dae147, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 10f4e538a29d64e49891aecdbb4242b5, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 297d27a005c6fa04bbc89de74e2e2db8, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 02137901858196a4f9c7b48243367000, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 2b30f540ad6a271438c003bc9a02d70b, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 6bb0c7deec942bd40b0c527e5fa6e565, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 0a051dc821c6d5e498ddabcaff920657, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 4ad06f0ca2a16124c9d38834568d6e48, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 77287cac4626e5a4db39fd1f3073745f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6bb0c7deec942bd40b0c527e5fa6e565, type: 2}

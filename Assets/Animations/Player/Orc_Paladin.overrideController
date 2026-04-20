@@ -9,11 +9,11 @@ AnimatorOverrideController:
   m_Name: Orc_Paladin
   m_Controller: {fileID: 9100000, guid: 40a59b07cff9cd142bc045821f4a87fb, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 6f2813295b9ba444cafd8da263dae147, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: c4499107996eb1b48924f0b50522fa45, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 297d27a005c6fa04bbc89de74e2e2db8, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 51a71227c5ea5f94f9b6aef922f0728c, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 2b30f540ad6a271438c003bc9a02d70b, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: cfebadc6a2bf71545b549b52b1de820c, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 0a051dc821c6d5e498ddabcaff920657, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 16a30707d3da6824587a24f176b01b0e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 77287cac4626e5a4db39fd1f3073745f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cfebadc6a2bf71545b549b52b1de820c, type: 2}

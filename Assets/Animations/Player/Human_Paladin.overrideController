@@ -9,11 +9,11 @@ AnimatorOverrideController:
   m_Name: Human_Paladin
   m_Controller: {fileID: 9100000, guid: 40a59b07cff9cd142bc045821f4a87fb, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 6f2813295b9ba444cafd8da263dae147, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 6f2813295b9ba444cafd8da263dae147, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 297d27a005c6fa04bbc89de74e2e2db8, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 58b507d47a88104498662861b5497c81, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 2b30f540ad6a271438c003bc9a02d70b, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: ffde30698a89898459870ede91b6bc19, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 0a051dc821c6d5e498ddabcaff920657, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: f425ba5607d89754b9f7755c4c3319f2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 77287cac4626e5a4db39fd1f3073745f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ffde30698a89898459870ede91b6bc19, type: 2}
