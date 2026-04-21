@@ -7,6 +7,14 @@ public class EnemyCombat : MonoBehaviour
     public float weaponRange;
     public LayerMask playerLayer;
     
+    private void Start()
+    {
+        if (CompareTag("Boss") && BossMemory.Instance != null && BossMemory.Instance.hasData)
+        {
+            damage = BossMemory.Instance.savedDamage;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

@@ -47,8 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   dialogueManager: {fileID: 0}
   gameOverScript: {fileID: 0}
+  winScreen: {fileID: 0}
   persistantObjects:
   - {fileID: 1944217836976785455}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

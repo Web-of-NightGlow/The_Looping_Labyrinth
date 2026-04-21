@@ -1,68 +1,62 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class WinScreen : MonoBehaviour
 {
     public static WinScreen Instance;
-    public CanvasGroup canvasGroup;
 
-    void Awake()
+     void Awake()
     {
-        Debug.Log($"WinScreen Awake: {gameObject.GetInstanceID()}");
-
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Debug.Log($"Destroying duplicate WinScreen: {gameObject.GetInstanceID()} (keeping {Instance.gameObject.GetInstanceID()})");
-            Destroy(gameObject);
-            return;
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-
-
-    void Start()
-    {
-        Hide(); // start hidden properly
-    }
-
 
     public void Show()
     {
-        canvasGroup.alpha = 1f;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
-
+        gameObject.SetActive(true);
         Time.timeScale = 0;
+        Debug.Log("Win screen activated and game paused.");
     }
 
 
-    public void Hide()
+    public void RestartGame()
     {
-        canvasGroup.alpha = 0f;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
-
+        ResetGame();
         Time.timeScale = 1;
-    }
-
-
-    public void MainMenu()
-    {
-        Hide();
-        SceneManager.LoadScene("MainMenu");
-    }
-
-
-    public void CharacterSelect()
-    {
-        Hide();
         SceneManager.LoadScene("CharacterSelection");
+        gameObject.SetActive(false);
     }
 
-    void OnDestroy()
+
+    public void ExitGame()
     {
-        Debug.Log($"WinScreen DESTROYED: {gameObject.GetInstanceID()} frame {Time.frameCount}");
+        ResetGame();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+        gameObject.SetActive(false);
+    }
+
+
+    public void ResetGame()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.StartNewGame();
+        }
+
+        // Destroy persistent player if somehow exists
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            Destroy(player);
+        }
     }
 }

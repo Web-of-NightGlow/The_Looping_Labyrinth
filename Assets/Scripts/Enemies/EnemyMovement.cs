@@ -20,8 +20,13 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        if (CompareTag("Boss") && BossMemory.Instance != null && BossMemory.Instance.hasData)
+        {
+            speed = BossMemory.Instance.savedSpeed;
+        }
+
         ChangeState(EnemyState.Idle);
-        
     }
 
     // Update is called once per frame

@@ -18,6 +18,11 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
+        if (CompareTag("Boss") && BossMemory.Instance != null && BossMemory.Instance.hasData)
+        {
+            maxHealth = BossMemory.Instance.savedHealth;
+        }
+
         currentHealth = maxHealth;
     }
 

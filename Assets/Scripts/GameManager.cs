@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public DialogueManager dialogueManager;
     public GameOverScript gameOverScript;
+    public WinScreen winScreen;
 
     [Header("Persistant Objects")]
     public GameObject[] persistantObjects;
@@ -64,12 +65,15 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        WinScreen.Instance?.Show();
-    }
-
-
-    void OnDestroy()
-    {
-        Debug.Log("GameManager DESTROYED");
+        if (gameOverScript != null)
+        {
+            Debug.Log("Player has won the game! Showing win screen.");
+            winScreen.Show();
+        }
+        else
+        {
+            Debug.LogError("WinScreen not assigned!");
+        }
+        
     }
 }

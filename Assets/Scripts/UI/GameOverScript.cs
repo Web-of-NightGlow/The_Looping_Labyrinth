@@ -58,9 +58,4 @@ public class GameOverScript : MonoBehaviour
             Destroy(player);
         }
     }
-
-    void OnDestroy()
-    {
-        Debug.Log(gameObject.name + " UI element destroyed!");
-    }
 }
