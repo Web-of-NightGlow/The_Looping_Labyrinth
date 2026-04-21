@@ -17,6 +17,7 @@ MonoBehaviour:
     characterBonus: Speed + 5
     characterSprite: {fileID: -3769692431204657356, guid: 672ea8854be86a0419d3dd6d5ff596fc, type: 3}
     characterClass: Paladin
+    characterAbility: Holy Armor - Blocks all damage for a few seconds
     characterRace: Goblin
     bonusHealth: 0
     bonusSpeed: 5
@@ -25,6 +26,7 @@ MonoBehaviour:
     characterBonus: Speed + 5
     characterSprite: {fileID: -76919792871430073, guid: 1f4c56e90ec771242840a1904f4aab96, type: 3}
     characterClass: Rogue
+    characterAbility: Shadow Step - Teleport a few meters forward
     characterRace: Goblin
     bonusHealth: 0
     bonusSpeed: 5
@@ -33,6 +35,7 @@ MonoBehaviour:
     characterBonus: Speed + 5
     characterSprite: {fileID: -6273924272496406711, guid: c2e86644c039d3d49904d403a372b97a, type: 3}
     characterClass: Wizard
+    characterAbility: Great Balls of Fire - Shoot 3 fireballs out at once
     characterRace: Goblin
     bonusHealth: 0
     bonusSpeed: 5
@@ -41,6 +44,7 @@ MonoBehaviour:
     characterBonus: Health + 5
     characterSprite: {fileID: 2502716560772617674, guid: ced87323c4228ec42adef0a430a2088a, type: 3}
     characterClass: Paladin
+    characterAbility: Holy Armor - Blocks all damage for a few seconds
     characterRace: Human
     bonusHealth: 5
     bonusSpeed: 0
@@ -49,6 +53,7 @@ MonoBehaviour:
     characterBonus: Health + 5
     characterSprite: {fileID: -1267620689, guid: 74b43f3e91ff2c44485173edc287b6d6, type: 3}
     characterClass: Rogue
+    characterAbility: Shadow Step - Teleport a few meters forward
     characterRace: Human
     bonusHealth: 5
     bonusSpeed: 0
@@ -57,6 +62,7 @@ MonoBehaviour:
     characterBonus: Health + 5
     characterSprite: {fileID: 888776203088456283, guid: 1aed0eef5f007564ba405b6307634dbc, type: 3}
     characterClass: Wizard
+    characterAbility: Great Balls of Fire - Shoot 3 fireballs out at once
     characterRace: Human
     bonusHealth: 5
     bonusSpeed: 0
@@ -65,6 +71,7 @@ MonoBehaviour:
     characterBonus: Strength + 5
     characterSprite: {fileID: -1248513604, guid: ab8600e6df5c44c4299e07ee502215ae, type: 3}
     characterClass: Paladin
+    characterAbility: Holy Armor - Blocks all damage for a few seconds
     characterRace: Orc
     bonusHealth: 0
     bonusSpeed: 0
@@ -73,6 +80,7 @@ MonoBehaviour:
     characterBonus: Strength + 5
     characterSprite: {fileID: 2645927282049945173, guid: e4ec419f638e4ef45a1c4dcda7a71ac9, type: 3}
     characterClass: Rogue
+    characterAbility: Shadow Step - Teleport a few meters forward
     characterRace: Orc
     bonusHealth: 0
     bonusSpeed: 0
@@ -81,6 +89,7 @@ MonoBehaviour:
     characterBonus: Strength + 5
     characterSprite: {fileID: -2013020839563481794, guid: a17cfa444112f4744a64821bfdc9d783, type: 3}
     characterClass: Wizard
+    characterAbility: Great Balls of Fire - Shoot 3 fireballs out at once
     characterRace: Orc
     bonusHealth: 0
     bonusSpeed: 0

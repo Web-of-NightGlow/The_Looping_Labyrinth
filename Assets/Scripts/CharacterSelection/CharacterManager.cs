@@ -8,6 +8,7 @@ public class CharacterManager : MonoBehaviour
     public CharacterDataBase characterDB;
     public TMP_Text nameText;
     public TMP_Text bonusText;
+    public TMP_Text abilityText;
     public SpriteRenderer artSprite;
 
     private int selectedCharacter = 0;
@@ -57,6 +58,7 @@ public class CharacterManager : MonoBehaviour
         Character character = characterDB.GetCharacter(selectedCharacter);
         nameText.text = character.characterName;
         bonusText.text = character.characterBonus;
+        abilityText.text = character.characterAbility;
         artSprite.sprite = character.characterSprite;
     }
 

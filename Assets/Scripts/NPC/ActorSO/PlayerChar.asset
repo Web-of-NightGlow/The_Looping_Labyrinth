@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b549b6539ea704a95189a8679901dc, type: 3}
   m_Name: PlayerChar
   m_EditorClassIdentifier: Assembly-CSharp::ActorSO
-  actorName: Human Wizard
-  portrait: {fileID: 888776203088456283, guid: 1aed0eef5f007564ba405b6307634dbc, type: 3}
+  actorName: Player
+  portrait: {fileID: -1267620689, guid: 74b43f3e91ff2c44485173edc287b6d6, type: 3}

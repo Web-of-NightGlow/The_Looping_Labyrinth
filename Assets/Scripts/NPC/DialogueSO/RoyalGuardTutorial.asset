@@ -20,6 +20,10 @@ MonoBehaviour:
     text: Each Class has a special ability that can be used with J. But, it has a
       large cooldown so use is wisely!
   - speaker: {fileID: 11400000, guid: 4c029433c2ef566489f3dd396015a856, type: 2}
-    text: Any interactions with NPCs or the enviorment use E.
+    text: Test out your actions in the bottom right of the screen on that dummy over
+      there!
+  - speaker: {fileID: 11400000, guid: 4c029433c2ef566489f3dd396015a856, type: 2}
+    text: When you're done you can enter by leaving the village at the left side
+      of town.
   - speaker: {fileID: 11400000, guid: cfe140c918cbe5549aee48ba73140407, type: 2}
-    text: Okay!
+    text: "Okay! \nI totally read and understood all of that!"

@@ -8,6 +8,7 @@ public class Character
     public Sprite characterSprite;
 
     public string characterClass;
+    public string characterAbility;
     public string characterRace;
 
     public int bonusHealth;
