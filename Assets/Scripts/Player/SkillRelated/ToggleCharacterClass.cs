@@ -5,7 +5,7 @@ public class ToggleCharacterClass : MonoBehaviour
     public PlayerVisualController playerVisual;
     public Player_CastMagic wizard;
     public PlayerCombat paladin;
-    //public Player_Rogue rogue;
+    public Player_Rogue rogue;
     public StatsManager statsManager;
 
 
@@ -17,10 +17,6 @@ public class ToggleCharacterClass : MonoBehaviour
 
     void ApplySelection()
     {
-        Debug.Log("Selection: " + PlayerSelection.Instance);
-        Debug.Log("Wizard ref: " + wizard);
-        Debug.Log("Paladin ref: " + paladin);
-        Debug.Log("StatsManager: " + StatsManager.Instance);
         var selection = PlayerSelection.Instance;
 
         if (selection == null)
@@ -34,19 +30,19 @@ public class ToggleCharacterClass : MonoBehaviour
         {
             wizard.enabled = true;
             paladin.enabled = false;
-            //rogue.enabled = false;
+            rogue.enabled = false;
         }
         else if(selection.selectedClass == "Paladin")
         {
             wizard.enabled = false;
             paladin.enabled = true;
-            //rogue.enabled = false;
+            rogue.enabled = false;
         }
         else if(selection.selectedClass == "Rogue")
         {
             wizard.enabled = false;
-            paladin.enabled = true;
-            //rogue.enabled = true;
+            paladin.enabled = false;
+            rogue.enabled = true;
         }
         else
         {

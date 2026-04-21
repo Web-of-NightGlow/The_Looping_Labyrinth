@@ -6707,7 +6707,9 @@ GameObject:
   - component: {fileID: 851274900}
   - component: {fileID: 851274902}
   - component: {fileID: 851274901}
-  m_Layer: 14
+  - component: {fileID: 851274903}
+  - component: {fileID: 851274904}
+  m_Layer: 9
   m_Name: TrainingDummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6763,8 +6765,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.006703922, y: 0.008300645}
-  m_Radius: 0.36021137
+  m_Offset: {x: -0.0067039332, y: -0.005171776}
+  m_Radius: 0.7441562
 --- !u!212 &851274902
 SpriteRenderer:
   serializedVersion: 2
@@ -6824,6 +6826,68 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &851274903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851274899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4436320ff3ed3384da796c86cd12cd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  room: {fileID: 0}
+  currentHealth: 999
+  maxHealth: 999
+  popUpPrefab: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
+--- !u!61 &851274904
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851274899}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.040436566, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.75, y: 1.8125}
+    newSize: {x: 1.75, y: 1.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.3170947, y: 1.8125}
+  m_EdgeRadius: 0
 --- !u!1 &967203484
 GameObject:
   m_ObjectHideFlags: 0
@@ -55321,9 +55385,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 508691010}
     - target: {fileID: 823590934796481226, guid: cf133dab950219448ac11993abdb44f5, type: 3}
-      propertyPath: playerVisual
+      propertyPath: rogue
       value: 
-      objectReference: {fileID: 1182991243965496807}
+      objectReference: {fileID: 1182991243965496808}
     - target: {fileID: 823590934796481226, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: statsManager
       value: 
@@ -55368,30 +55432,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5440109427401500670, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1182991243965496805}
     - target: {fileID: 7238155708142635431, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8472392569311553094, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: characterSets.Array.data[0].race
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472392569311553094, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: characterSets.Array.data[0].characterClass
+      value: Paladin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472392569311553094, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: characterSets.Array.data[0].overrideController
+      value: 
+      objectReference: {fileID: 22100000, guid: 5a8afa269206b944999982ab31723cef, type: 2}
     - target: {fileID: 8567764985776041020, guid: cf133dab950219448ac11993abdb44f5, type: 3}
       propertyPath: statsUI
       value: 
       objectReference: {fileID: 1399596723}
+    - target: {fileID: 8567764985776041020, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1182991243965496805}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf133dab950219448ac11993abdb44f5, type: 3}
---- !u!114 &1182991243965496807 stripped
+--- !u!114 &1182991243965496805 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8472392569311553094, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 590264493347332082, guid: cf133dab950219448ac11993abdb44f5, type: 3}
   m_PrefabInstance: {fileID: 1182991243965496804}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188929179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc9312550b29b0741aaf783ea415e732, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c9222653cb103b45ae8b3c40eab495e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerVisualController
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+--- !u!114 &1182991243965496808 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5440109427401500670, guid: cf133dab950219448ac11993abdb44f5, type: 3}
+  m_PrefabInstance: {fileID: 1182991243965496804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188929179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1c7bd0ef918ee46b08ad73a5295bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Rogue
 --- !u!1001 &1937939394134129563
 PrefabInstance:
   m_ObjectHideFlags: 0

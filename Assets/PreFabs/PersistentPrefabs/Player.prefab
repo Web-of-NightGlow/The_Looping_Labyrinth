@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 590264493347332082}
   - component: {fileID: 8567764985776041020}
   - component: {fileID: 5789348962587484674}
+  - component: {fileID: 5440109427401500670}
   - component: {fileID: 823590934796481226}
   - component: {fileID: 8472392569311553094}
   m_Layer: 8
@@ -250,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   slider: {fileID: 0}
   popUpPrefab: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
+  isInvulnerable: 0
 --- !u!114 &8567764985776041020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +270,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   statsUI: {fileID: 0}
+  playerHealth: {fileID: 590264493347332082}
+  holyArmorDuration: 2
+  holyArmorCooldown: 5
 --- !u!114 &5789348962587484674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,9 +287,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_CastMagic
   firePoint: {fileID: 3804430796820171580}
   fireballPrefab: {fileID: 931686273801092952, guid: 8d322d4e608fbfb478ce8414c1034d90, type: 3}
-  castCooldown: 0.5
   playerMovement: {fileID: 8922957670344422131}
   anim: {fileID: 7075072640717557611}
+  primaryCooldown: 0.5
+  secondaryCooldown: 1.2
+--- !u!114 &5440109427401500670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7238155708142635431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1c7bd0ef918ee46b08ad73a5295bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Rogue
+  anim: {fileID: 7075072640717557611}
+  attackPoint: {fileID: 6476472660270298246}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  playerMovement: {fileID: 8922957670344422131}
+  dashDistance: 4
+  dashCooldown: 3
 --- !u!114 &823590934796481226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +326,7 @@ MonoBehaviour:
   playerVisual: {fileID: 8472392569311553094}
   wizard: {fileID: 5789348962587484674}
   paladin: {fileID: 8567764985776041020}
+  rogue: {fileID: 5440109427401500670}
   statsManager: {fileID: 0}
 --- !u!114 &8472392569311553094
 MonoBehaviour:
@@ -315,9 +342,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerVisualController
   animator: {fileID: 7075072640717557611}
   characterSets:
-  - race: 
-    characterClass: 
-    overrideController: {fileID: 0}
+  - race: Goblin
+    characterClass: Paladin
+    overrideController: {fileID: 22100000, guid: 5a8afa269206b944999982ab31723cef, type: 2}
   - race: Goblin
     characterClass: Rogue
     overrideController: {fileID: 22100000, guid: ae647c4db67d416409159a8039391934, type: 2}
