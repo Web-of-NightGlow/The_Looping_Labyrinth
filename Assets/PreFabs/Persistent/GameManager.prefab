@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990172987816926481}
   - component: {fileID: 9196738432673408139}
+  - component: {fileID: 537356764746597428}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,6 +49,22 @@ MonoBehaviour:
   gameOverScript: {fileID: 0}
   persistantObjects:
   - {fileID: 1944217836976785455}
-  - {fileID: 9183408994133255714, guid: 579ef80cc3c2def459e36d96bdd0fa57, type: 3}
-  - {fileID: 709300655917330979, guid: be28d3f52b5a0ee459fc8f5a74f7e0ea, type: 3}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &537356764746597428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944217836976785455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a02b681f9756f44a3c4bd9d3547aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossMemory
+  savedDamage: 0
+  savedSpeed: 0
+  savedHealth: 0
+  hasData: 0

@@ -16,13 +16,13 @@ public class BossMemory : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            LoadData(); // LOAD ON START
         }
         else
         {
             Destroy(gameObject);
         }
     }
-
 
     public void SavePlayerStats()
     {
@@ -32,6 +32,33 @@ public class BossMemory : MonoBehaviour
 
         hasData = true;
 
-        Debug.Log("Boss absorbed player stats!");
+        // SAVE TO DISK
+        PlayerPrefs.SetInt("BossDamage", savedDamage);
+        PlayerPrefs.SetInt("BossSpeed", savedSpeed);
+        PlayerPrefs.SetInt("BossHealth", savedHealth);
+        PlayerPrefs.SetInt("BossHasData", 1);
+
+        PlayerPrefs.Save();
+
+        Debug.Log("Boss stats saved to PlayerPrefs!");
     }
+
+
+        void LoadData()
+        {
+            if (PlayerPrefs.GetInt("BossHasData", 0) == 1)
+            {
+                savedDamage = PlayerPrefs.GetInt("BossDamage");
+                savedSpeed = PlayerPrefs.GetInt("BossSpeed");
+                savedHealth = PlayerPrefs.GetInt("BossHealth");
+
+                hasData = true;
+
+                Debug.Log("Boss stats loaded from PlayerPrefs!");
+            }
+            else
+            {
+                hasData = false;
+            }
+        }
 }

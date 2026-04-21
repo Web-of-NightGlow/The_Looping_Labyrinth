@@ -39,9 +39,22 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    public void Die()
+    void Die()
     {
+        Debug.Log(gameObject.name + " died");
         room.EnemyDied(gameObject);
+
+        if (CompareTag("Boss"))
+        {
+            BossMemory.Instance?.SavePlayerStats();
+            GameManager.Instance?.WinGame();
+        }
+
         Destroy(gameObject);
+    }
+
+    void OnDestroy()
+    {
+        Debug.Log(gameObject.name + " UI element destroyed!");
     }
 }

@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatsUI
   statsSlots:
-  - {fileID: 4126843462638453639}
+  - {fileID: 3955175463146469180}
   - {fileID: 2982297906127295396}
   - {fileID: 3532345376306721147}
   statsCanvas: {fileID: 100673065469544316}
@@ -457,7 +457,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9183408994133255714}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -561,11 +561,6 @@ PrefabInstance:
 --- !u!224 &121906126964017374 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4991664915784711392, guid: 2341c53f98b3c934497002e1f5b42ed1, type: 3}
-  m_PrefabInstance: {fileID: 4968855985142821950}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4126843462638453639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9057181346437773241, guid: 2341c53f98b3c934497002e1f5b42ed1, type: 3}
   m_PrefabInstance: {fileID: 4968855985142821950}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5527318710411773634

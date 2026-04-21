@@ -5,24 +5,21 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public DialogueManager dialogueManager;
     public GameOverScript gameOverScript;
-    public WinScreen winScreen;
 
     [Header("Persistant Objects")]
     public GameObject[] persistantObjects;
 
-    private void Awake()
+    void Awake()
     {
-        if(Instance != null)
+        if (Instance != null && Instance != this)
         {
-            CleanUpAndDestroy();
+            Destroy(gameObject);
             return;
         }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            MarkPersistantObjects();
-        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        MarkPersistantObjects();
     }
 
 
@@ -35,19 +32,6 @@ public class GameManager : MonoBehaviour
                 DontDestroyOnLoad(obj);
             }
         }
-    }
-
-
-    private void CleanUpAndDestroy()
-    {
-        foreach (GameObject obj in persistantObjects)
-        {
-            if(obj != null)
-            {
-                Destroy(obj);
-            }
-        }
-        Destroy(gameObject);
     }
 
 
@@ -80,9 +64,12 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        if (winScreen != null)
-        {
-            winScreen.Show();
-        }
+        WinScreen.Instance?.Show();
+    }
+
+
+    void OnDestroy()
+    {
+        Debug.Log("GameManager DESTROYED");
     }
 }

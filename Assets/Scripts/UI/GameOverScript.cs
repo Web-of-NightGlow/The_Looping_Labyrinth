@@ -22,12 +22,14 @@ public class GameOverScript : MonoBehaviour
     public void SetUp()
     {
         gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 
 
     public void RestartGame()
     {
         ResetGame();
+        Time.timeScale = 1;
         SceneManager.LoadScene("CharacterSelection");
         gameObject.SetActive(false);
     }
@@ -36,6 +38,7 @@ public class GameOverScript : MonoBehaviour
     public void ExitGame()
     {
         ResetGame();
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
         gameObject.SetActive(false);
     }
@@ -54,5 +57,10 @@ public class GameOverScript : MonoBehaviour
         {
             Destroy(player);
         }
+    }
+
+    void OnDestroy()
+    {
+        Debug.Log(gameObject.name + " UI element destroyed!");
     }
 }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4773164963780434339}
   - component: {fileID: 5260144110305294413}
   - component: {fileID: 4105661847906726579}
-  - component: {fileID: 2427814334404881160}
+  - component: {fileID: 7353526412438728923}
   m_Layer: 9
   m_Name: KingLabyrinth
   m_TagString: Enemy
@@ -276,8 +276,9 @@ MonoBehaviour:
   damage: 5
   moveSpeed: 2
   maxHealth: 30
-  currentHealth: 0
---- !u!114 &2427814334404881160
+  currentHealth: 30
+  popUpPrefab: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
+--- !u!114 &7353526412438728923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,13 +287,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3269893751647411729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a02b681f9756f44a3c4bd9d3547aa6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4436320ff3ed3384da796c86cd12cd3c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossMemory
-  savedDamage: 0
-  savedSpeed: 0
-  savedHealth: 0
-  hasData: 0
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  room: {fileID: 0}
+  currentHealth: 4
+  maxHealth: 4
+  popUpPrefab: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
 --- !u!1 &8223075298139598423
 GameObject:
   m_ObjectHideFlags: 0
