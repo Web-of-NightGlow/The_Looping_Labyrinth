@@ -80,12 +80,12 @@ public class Player_Rogue : MonoBehaviour
         anim.SetBool("isAttacking", false);
     }
 
-    // Called by animation event (IMPORTANT)
+    // Called by animation event
     public void PerformShadowStep()
     {
         playerHealth.isInvulnerable = true;
         Vector3 targetPosition = transform.position + (Vector3)(aimDirection * dashDistance);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, aimDirection, dashDistance, LayerMask.GetMask("Wall"));
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, aimDirection, dashDistance, LayerMask.GetMask("Obstacle"));
 
         if (hit)
         {

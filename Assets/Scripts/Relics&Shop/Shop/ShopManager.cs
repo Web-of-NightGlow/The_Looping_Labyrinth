@@ -29,7 +29,7 @@ public class ShopManager : MonoBehaviour
         {
             inventoryManager.gold -= price;
             inventoryManager.goldText.text = inventoryManager.gold.ToString();
-            //inventoryManager.AddItem(itemSO, 1);
+            inventoryManager.AddToInventory(itemSO, 1);
         }
     }
 }

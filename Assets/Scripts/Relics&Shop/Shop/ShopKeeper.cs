@@ -12,8 +12,7 @@ public class ShopKeeper : MonoBehaviour
     [SerializeField] private List<ShopRelics> shopHealth;
     [SerializeField] private List<ShopRelics> shopSpeed;
     [SerializeField] private List<ShopRelics> shopDamage;
-    [SerializeField] private List<ShopRelics> shopDexterity;
-    [SerializeField] private Camera shopKeeperCam;
+    //[SerializeField] private List<ShopRelics> shopDexterity;
     [SerializeField] private Vector3 cameraOffset = new Vector3(0, 0, -1);
 
     private bool playerInRange;
@@ -22,6 +21,8 @@ public class ShopKeeper : MonoBehaviour
 
     void Update()
     {
+        if (shopCanvasGroup == null) return;
+        
         if(playerInRange && Input.GetButtonDown("Interact"))
         {
             if (!isShopOpen)
@@ -33,8 +34,6 @@ public class ShopKeeper : MonoBehaviour
                 shopCanvasGroup.blocksRaycasts = true;
                 isShopOpen = true;
 
-                shopKeeperCam.transform.position = transform.position + cameraOffset;
-                shopKeeperCam.gameObject.SetActive(true);
                 OpenHealthShop();
             }
             else
@@ -45,7 +44,6 @@ public class ShopKeeper : MonoBehaviour
                 shopCanvasGroup.interactable = false;
                 shopCanvasGroup.blocksRaycasts = false;
                 isShopOpen = false;
-                shopKeeperCam.gameObject.SetActive(false);
             }
         }
     }
@@ -69,10 +67,10 @@ public class ShopKeeper : MonoBehaviour
     }
 
     
-    public void OpenDexterityShop()
-    {
-        shopManager.PopulateShopItems(shopDexterity);
-    }
+    // public void OpenDexterityShop()
+    // {
+    //     shopManager.PopulateShopItems(shopDexterity);
+    // }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -93,4 +91,12 @@ public class ShopKeeper : MonoBehaviour
         }
     }
 
+
+    void OnDestroy()
+    {
+        if (currentShopKeeper == this)
+        {
+            currentShopKeeper = null;
+        }
+    }
 }

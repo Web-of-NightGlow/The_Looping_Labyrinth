@@ -16,11 +16,17 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
+    void Update()
+    {
+        slider.maxValue = StatsManager.Instance.maxHealth;
+        slider.value = StatsManager.Instance.currentHealth;
+    }
+
+
     public void ChangeHealth(int amount)
     {
         if (amount < 0 && isInvulnerable)
         {
-            Debug.Log("Blocked damage with Holy Armor");
             return;
         }
 
@@ -33,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (StatsManager.Instance.currentHealth <= 0)
         {
+            GameManager.Instance.GameOver();
+
             gameObject.SetActive(false);
         }
     }

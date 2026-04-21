@@ -10,6 +10,12 @@ public class StatsUI : MonoBehaviour
 
     private void Start()
     {
+    if (StatsManager.Instance == null)
+    {
+        Debug.LogError("StatsManager missing!");
+        return;
+    }
+
         UpdateAllStats();
     }
 

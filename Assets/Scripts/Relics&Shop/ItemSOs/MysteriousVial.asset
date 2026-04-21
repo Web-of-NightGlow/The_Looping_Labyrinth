@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MysteriousVial
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   itemName: Mysterious Vial
-  itemDescription: A syringe said to prevent wars
+  itemDescription: An odd copper colored vial
   itemIcon: {fileID: -606020618633898811, guid: 9cf9cc36564d818458892950acde44f3, type: 3}
   isGold: 0
   stackSize: 99
@@ -21,3 +21,4 @@ MonoBehaviour:
   maxHealth: 10
   speed: 0
   damage: 0
+  attackSpeed: 0

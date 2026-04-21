@@ -29,11 +29,11 @@ public class ShopButtonToggle : MonoBehaviour
     }
 
 
-    public void OpenDexterityShop()
-    {
-        if (ShopKeeper.currentShopKeeper != null)
-        {
-            ShopKeeper.currentShopKeeper.OpenDexterityShop();
-        }
-    }
+    // public void OpenDexterityShop()
+    // {
+    //     if (ShopKeeper.currentShopKeeper != null)
+    //     {
+    //         ShopKeeper.currentShopKeeper.OpenDexterityShop();
+    //     }
+    // }
 }

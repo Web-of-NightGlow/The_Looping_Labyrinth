@@ -9,6 +9,10 @@ public class StatsManager : MonoBehaviour
     public int damage;
     public float weaponRange;
     public float attackCooldown;
+    public bool statsInitialized = false;
+    public int baseHealth = 10;
+    public int baseSpeed = 5;
+    public int baseDamage = 1;
 
     [Header("Movement Stats")]
     public int moveSpeed;
@@ -56,4 +60,13 @@ public class StatsManager : MonoBehaviour
     //     attackCooldown -= amount;
     //     statsUI.UpdateAllStats();
     // }
+
+
+    public void ResetStats()
+    {
+        maxHealth = baseHealth;
+        currentHealth = maxHealth;
+        moveSpeed = baseSpeed;
+        damage = baseDamage;
+    }
 }

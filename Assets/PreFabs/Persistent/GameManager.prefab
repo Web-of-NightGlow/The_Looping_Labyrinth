@@ -44,12 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d7086afc9fc20409754865fe3c342e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  dialogueManager: {fileID: 0}
+  gameOverScript: {fileID: 0}
   persistantObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1944217836976785455}
-  - {fileID: 0}
+  - {fileID: 9183408994133255714, guid: 579ef80cc3c2def459e36d96bdd0fa57, type: 3}
+  - {fileID: 709300655917330979, guid: be28d3f52b5a0ee459fc8f5a74f7e0ea, type: 3}
   - {fileID: 0}

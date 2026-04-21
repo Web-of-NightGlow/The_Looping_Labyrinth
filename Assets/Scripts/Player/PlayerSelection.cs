@@ -6,6 +6,7 @@ public class PlayerSelection : MonoBehaviour
 
     public string selectedClass;
     public string selectedRace;
+    public bool hasAppliedStats = false;
 
     private void Awake()
     {

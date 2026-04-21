@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 220398411}
   - component: {fileID: 220398410}
   - component: {fileID: 220398409}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Non-CollisionLow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
