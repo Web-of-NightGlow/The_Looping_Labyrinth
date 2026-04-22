@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayer;
     public StatsUI statsUI;
     public PlayerHealth playerHealth;
+    AudioManager audioManager;
     
     private float timer;
 
@@ -16,6 +17,13 @@ public class PlayerCombat : MonoBehaviour
 
     private float holyArmorTimer;
     private float holyArmorCooldownTimer;
+
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
 
     private void Update()
     {
@@ -50,6 +58,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if(timer <= 0)
         {
+            audioManager.PlaySFX(audioManager.weaponSwingClip);
             anim.SetBool("isAttacking", true);
 
             timer = StatsManager.Instance.attackCooldown;

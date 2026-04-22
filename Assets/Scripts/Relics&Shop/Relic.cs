@@ -6,10 +6,17 @@ public class Relic : MonoBehaviour
     public ItemSO relicData;
     public SpriteRenderer sr;
     public Animator anim;
+    AudioManager audioManager;
     
     public int quantity;
 
     public static event Action<ItemSO, int> OnRelicLooted;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
 
     private void Start()
     {
@@ -35,6 +42,7 @@ public class Relic : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             anim.Play("relicPickUp");
+            audioManager.PlaySFX(audioManager.relicPickupClip);
             OnRelicLooted?.Invoke(relicData, quantity);
             Destroy(gameObject, 0.5f);
         }

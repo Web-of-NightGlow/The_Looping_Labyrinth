@@ -6,6 +6,7 @@ public class Player_CastMagic : MonoBehaviour
     public GameObject fireballPrefab;
     public PlayerMovement playerMovement;
     public Animator anim;
+    AudioManager audioManager;
 
     public float primaryCooldown = 0.5f;
     public float secondaryCooldown = 1.2f;
@@ -13,6 +14,13 @@ public class Player_CastMagic : MonoBehaviour
 
     private bool useSecondary = false;
     private Vector2 aimDirection = Vector2.right;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
 
     void Update()
     {
@@ -24,6 +32,7 @@ public class Player_CastMagic : MonoBehaviour
         {
             playerMovement.isShooting = true;
             useSecondary = false;
+            audioManager.PlaySFX(audioManager.fireballClip);
 
             anim.SetBool("isSecond", false);   // ensure secondary is off
             anim.SetBool("isShooting", true);  // play primary animation
@@ -34,6 +43,7 @@ public class Player_CastMagic : MonoBehaviour
         {
             playerMovement.isShooting = true;
             useSecondary = true;
+            audioManager.PlaySFX(audioManager.fireballClip);
 
             anim.SetBool("isShooting", false); // ensure primary is off
             anim.SetBool("isSecond", true);    // play secondary animation

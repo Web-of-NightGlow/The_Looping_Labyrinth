@@ -8,6 +8,7 @@ public class Player_Rogue : MonoBehaviour
     public LayerMask enemyLayer;
     public PlayerMovement playerMovement;
     public PlayerHealth playerHealth;
+    AudioManager audioManager;
 
     [Header("Primary Attack")]
     private float attackTimer;
@@ -19,6 +20,12 @@ public class Player_Rogue : MonoBehaviour
 
     private Vector2 aimDirection = Vector2.right;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     void Update()
     {
         HandleTimers();
@@ -27,6 +34,7 @@ public class Player_Rogue : MonoBehaviour
         //PRIMARY ATTACK
         if (Input.GetButtonDown("Slash") && attackTimer <= 0)
         {
+            audioManager.PlaySFX(audioManager.weaponSwingClip);
             anim.SetBool("isAttacking", true);
             attackTimer = StatsManager.Instance.attackCooldown;
         }
@@ -40,11 +48,13 @@ public class Player_Rogue : MonoBehaviour
         }
     }
 
+
     void HandleTimers()
     {
         attackTimer = Mathf.Max(0, attackTimer - Time.deltaTime);
         dashTimer = Mathf.Max(0, dashTimer - Time.deltaTime);
     }
+
 
     void HandleAiming()
     {

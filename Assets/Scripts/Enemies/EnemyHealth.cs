@@ -8,11 +8,13 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth = 4;
     public int maxHealth = 4;
     public GameObject popUpPrefab;
+    AudioManager audioManager;
 
 
     void Awake()
     {
         room = GetComponentInParent<RoomController>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
 
@@ -46,8 +48,8 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log(gameObject.name + " died");
         room.EnemyDied(gameObject);
+        audioManager.PlaySFX(audioManager.enemyDeathClip);
 
         if (CompareTag("Boss"))
         {
@@ -56,10 +58,5 @@ public class EnemyHealth : MonoBehaviour
         }
 
         Destroy(gameObject);
-    }
-
-    void OnDestroy()
-    {
-        Debug.Log(gameObject.name + " UI element destroyed!");
     }
 }
