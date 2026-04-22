@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4bdd975bcf786e4ba0a3724e7802efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
-  damage: 2
+  damage: 5
   attackPoint: {fileID: 4832663536928292236}
   weaponRange: 1
   playerLayer:
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e15356d69613a54bae3af5fff0a3c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  speed: 3
+  speed: 5
   attackRange: 1.25
   attackCooldown: 5
   playerDetectionRange: 3.5
@@ -291,8 +291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   room: {fileID: 0}
-  currentHealth: 4
-  maxHealth: 4
+  currentHealth: 30
+  maxHealth: 30
   popUpPrefab: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
 --- !u!1 &8223075298139598423
 GameObject:

@@ -23,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (CompareTag("Boss") && BossMemory.Instance != null && BossMemory.Instance.hasData)
         {
-            speed = BossMemory.Instance.savedSpeed;
+            speed = (BossMemory.Instance.savedSpeed)/2;
         }
 
         ChangeState(EnemyState.Idle);

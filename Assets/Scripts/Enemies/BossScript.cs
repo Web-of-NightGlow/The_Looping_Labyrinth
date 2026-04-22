@@ -15,8 +15,8 @@ public class BossScript : MonoBehaviour
         if (BossMemory.Instance != null && BossMemory.Instance.hasData)
         {
             damage = BossMemory.Instance.savedDamage + 2;
-            moveSpeed = BossMemory.Instance.savedSpeed;
-            maxHealth = BossMemory.Instance.savedHealth + 10;
+            moveSpeed = BossMemory.Instance.savedSpeed/2;
+            maxHealth = BossMemory.Instance.savedHealth + 20;
 
             currentHealth = maxHealth;
 

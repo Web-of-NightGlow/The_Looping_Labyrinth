@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   room: {fileID: 0}
-  currentHealth: 20
-  maxHealth: 20
+  currentHealth: 50
+  maxHealth: 50
   popUpPrefab: {fileID: 4338420251251166899, guid: 1d17f747a26a10844b1a3dbb4ad0291d, type: 3}
 --- !u!1 &4021785800447354776
 GameObject:

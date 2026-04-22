@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator anim;
     public PlayerCombat playerCombat;
+    public Player_Rogue playerRogue;
+    public Player_CastMagic playerCastMagic;
     public bool isShooting;
 
     void Awake()
@@ -17,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Slash")) //Set to L right now
+        if (((playerRogue != null && playerRogue.enabled) || (playerCombat != null && playerCombat.enabled)) && Input.GetButtonDown("Slash"))
         {
             playerCombat.Attack();
         }
