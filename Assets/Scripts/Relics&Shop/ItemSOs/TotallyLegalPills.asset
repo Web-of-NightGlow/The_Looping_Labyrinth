@@ -21,3 +21,5 @@ MonoBehaviour:
   maxHealth: 0
   speed: 0
   damage: 20
+  attackSpeed: 0
+  cost: 20

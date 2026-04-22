@@ -16,4 +16,7 @@ public class ItemSO : ScriptableObject
     public int speed;
     public int damage;
     public int attackSpeed;
+
+    [Header("Shop / Rarity")]
+    public int cost = 1;
 }

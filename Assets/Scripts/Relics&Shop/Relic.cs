@@ -11,6 +11,16 @@ public class Relic : MonoBehaviour
 
     public static event Action<ItemSO, int> OnRelicLooted;
 
+    private void Start()
+    {
+        if (relicData != null)
+        {
+            sr.sprite = relicData.itemIcon;
+            name = relicData.itemName;
+        }
+    }
+
+
     private void OnValidate()
     {
         if (relicData == null)
@@ -18,6 +28,7 @@ public class Relic : MonoBehaviour
         sr.sprite = relicData.itemIcon;
         this.name = relicData.itemName;
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
