@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -14,6 +15,21 @@ public class AudioManager : MonoBehaviour
     public AudioClip relicPickupClip;
     public AudioClip enemyDeathClip;
     public AudioClip playerDeathClip;
+
+    public static AudioManager instance;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
     private void Start()

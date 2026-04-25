@@ -34,7 +34,13 @@ public class NPC_Talk : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact"))
         {
-            if(GameManager.Instance.dialogueManager.isDialogueActive)
+            if (GameManager.Instance == null || GameManager.Instance.dialogueManager == null)
+            {
+                Debug.LogWarning("DialogueManager missing!");
+                return;
+            }
+
+            if (GameManager.Instance.dialogueManager.isDialogueActive)
             {
                 GameManager.Instance.dialogueManager.AdvanceDialogue();
             }
